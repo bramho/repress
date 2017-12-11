@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  Repress
 //
 //  Created by Geart on 11/12/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class BalansViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
