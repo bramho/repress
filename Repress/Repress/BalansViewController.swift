@@ -10,6 +10,12 @@ import UIKit
 
 class BalansViewController: UIViewController {
 
+    @IBOutlet weak var leftShoeBar: UIView!
+    @IBOutlet weak var rightShoeBar: UIView!
+    
+    @IBOutlet weak var leftShoeLabel: UILabel!
+    @IBOutlet weak var rightShoeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
