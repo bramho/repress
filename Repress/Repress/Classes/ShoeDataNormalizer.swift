@@ -9,7 +9,7 @@
 import Foundation
 
 class ShoeDataNormalizer {
-    let MAX_PRESSURE_VALUE: Float = 600; // Maxiumum value the shoe will generate on average
+    let MAX_PRESSURE_VALUE: Float = 500; // Maxiumum value the shoe will generate on average
     
     func normalizePressureValue(pressureValue: Float) -> Float {
         if pressureValue > MAX_PRESSURE_VALUE {

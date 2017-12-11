@@ -14,25 +14,26 @@ class BalanceFaker {
     var liftLeftFoot = LiftFoot.init()
     var liftRightFoot = LiftFoot.init()
     
+    var repeats = true
     // Starts interval
     func scheduledTimerWithTimeInterval () {
         timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.generateShoeValues), userInfo: nil, repeats: true)
     }
     
     @objc func generateShoeValues () {
-        
-        let leftShoeValues = SensorValue(sensor1: getSensorValue(type: "LeftFoot"), sensor2: getSensorValue(type: "LeftFoot"), sensor3: getSensorValue(type: "LeftFoot"), sensor4: getSensorValue(type: "LeftFoot"))
-        
-        let rightShoeValues = SensorValue(sensor1: getSensorValue(type: "RightFoot"), sensor2: getSensorValue(type: "RightFoot"), sensor3: getSensorValue(type: "RightFoot"), sensor4: getSensorValue(type: "RightFoot"))
-        
-        let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
-        
-        //print (sensorValues)
-        // Posts sensor data to NotificationCenter
-        NotificationCenter.default.post(name: Notification.Name("NewShoeData"), object: nil, userInfo: sensorValues)
-        
-        count()
-        
+        if repeats {
+            let leftShoeValues = SensorValue(sensor1: getSensorValue(type: "LeftFoot"), sensor2: getSensorValue(type: "LeftFoot"), sensor3: getSensorValue(type: "LeftFoot"), sensor4: getSensorValue(type: "LeftFoot"))
+            
+            let rightShoeValues = SensorValue(sensor1: getSensorValue(type: "RightFoot"), sensor2: getSensorValue(type: "RightFoot"), sensor3: getSensorValue(type: "RightFoot"), sensor4: getSensorValue(type: "RightFoot"))
+            
+            let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
+            
+            //print (sensorValues)
+            // Posts sensor data to NotificationCenter
+            NotificationCenter.default.post(name: Notification.Name("NewShoeData"), object: nil, userInfo: sensorValues)
+            
+            count()
+        }
     }
     
     func count () {
