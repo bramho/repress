@@ -12,6 +12,12 @@
 		2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */; };
 		25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3661FDEBC7C0073031A /* LiftFoot.swift */; };
 		25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3681FDEBD140073031A /* BalanceFaker.swift */; };
+		25EAD3711FDFD7BA0073031A /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36B1FDFD7B90073031A /* Shoe.swift */; };
+		25EAD3721FDFD7BA0073031A /* ShoeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36C1FDFD7B90073031A /* ShoeManager.swift */; };
+		25EAD3731FDFD7BA0073031A /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36D1FDFD7B90073031A /* Packet.swift */; };
+		25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36E1FDFD7B90073031A /* Connector.swift */; };
+		25EAD3751FDFD7BA0073031A /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36F1FDFD7B90073031A /* StateManager.swift */; };
+		25EAD3761FDFD7BA0073031A /* ByteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3701FDFD7BA0073031A /* ByteUtils.swift */; };
 		E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */; };
 		E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC51FDED0C300362640 /* PatternFaker.swift */; };
 		E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */; };
@@ -28,6 +34,12 @@
 		2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValue.swift; sourceTree = "<group>"; };
 		25EAD3661FDEBC7C0073031A /* LiftFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftFoot.swift; sourceTree = "<group>"; };
 		25EAD3681FDEBD140073031A /* BalanceFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceFaker.swift; sourceTree = "<group>"; };
+		25EAD36B1FDFD7B90073031A /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
+		25EAD36C1FDFD7B90073031A /* ShoeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeManager.swift; sourceTree = "<group>"; };
+		25EAD36D1FDFD7B90073031A /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		25EAD36E1FDFD7B90073031A /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		25EAD36F1FDFD7B90073031A /* StateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		25EAD3701FDFD7BA0073031A /* ByteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteUtils.swift; sourceTree = "<group>"; };
 		E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LooppatroonViewController.swift; path = Repress/LooppatroonViewController.swift; sourceTree = SOURCE_ROOT; };
 		E22CEEC51FDED0C300362640 /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
 		E2C566131FDE9ECC00DFB7D0 /* Repress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		25EAD36A1FDFD2F10073031A /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				25EAD3701FDFD7BA0073031A /* ByteUtils.swift */,
+				25EAD36E1FDFD7B90073031A /* Connector.swift */,
+				25EAD36D1FDFD7B90073031A /* Packet.swift */,
+				25EAD36B1FDFD7B90073031A /* Shoe.swift */,
+				25EAD36C1FDFD7B90073031A /* ShoeManager.swift */,
+				25EAD36F1FDFD7B90073031A /* StateManager.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
 		E2C5660A1FDE9ECB00DFB7D0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,7 @@
 		E2C566151FDE9ECC00DFB7D0 /* Repress */ = {
 			isa = PBXGroup;
 			children = (
+				25EAD36A1FDFD2F10073031A /* Backend */,
 				2577CFC81FDEA42200DB0FDA /* Classes */,
 				E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */,
 				E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */,
@@ -171,13 +197,19 @@
 				25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */,
 				E2C5661B1FDE9ECC00DFB7D0 /* BalansViewController.swift in Sources */,
 				E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */,
+				25EAD3751FDFD7BA0073031A /* StateManager.swift in Sources */,
+				25EAD3711FDFD7BA0073031A /* Shoe.swift in Sources */,
 				E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */,
+				25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */,
 				2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */,
 				2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */,
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
 				2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */,
+				25EAD3721FDFD7BA0073031A /* ShoeManager.swift in Sources */,
 				E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */,
+				25EAD3731FDFD7BA0073031A /* Packet.swift in Sources */,
+				25EAD3761FDFD7BA0073031A /* ByteUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 85G3Q3XQRA;
 				INFOPLIST_FILE = Repress/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -331,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 85G3Q3XQRA;
 				INFOPLIST_FILE = Repress/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

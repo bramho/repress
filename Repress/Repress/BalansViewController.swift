@@ -8,25 +8,54 @@
 
 import UIKit
 
-class BalansViewController: UIViewController {
-
+class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate {
     @IBOutlet weak var leftShoeBar: UIView!
     @IBOutlet weak var rightShoeBar: UIView!
     
     @IBOutlet weak var leftShoeLabel: UILabel!
     @IBOutlet weak var rightShoeLabel: UILabel!
     
+    var manager : ShoeManager!
     var balanceFaker = BalanceFaker()
+    
+    var leftShoe: Shoe!
+    var rightShoe: Shoe!
+    
+    @IBAction func tempStartButton(_ sender: Any) {
+        manager.startConnectionSession()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        manager = ShoeManager.init()
+        manager.delegate = self
+        StateManager.instance.delegate = self
         
         // Start interval
-        balanceFaker.scheduledTimerWithTimeInterval()
+        //balanceFaker.scheduledTimerWithTimeInterval()
         
         // Listen for new balance data
         NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewBalanceData(notification:)), name: Notification.Name("NewShoeData"), object: nil)
+    }
+    
+    func stateUpdated(_ state: Int, _ error: String?) {
+        print("State: " + String(state))
+        print(error)
+        
+        if (state == StateManager.States.activated.rawValue) {
+            manager.stopConnectionSession()
+        }
+    }
+    
+    func sensorDataReceivedFromShoe(_ data: Shoe) {
+        if(data.getShoeType() == 1)  { // leftShoe
+            print("leftshoedata")
+            print(data.getShoe().getSensors())
+        } else if (data.getShoeType() == 2) {
+            print("rightshoedata")
+            print(data.getShoe().getSensors())
+        }
     }
     
     @objc func gotNewBalanceData(notification: Notification) {
@@ -37,7 +66,7 @@ class BalansViewController: UIViewController {
     }
     
     // Display balance data on the screen
-    func displayBalanceOnScreen(leftShoe: SensorValue, rightShoe: SensorValue) {
+    func displayBalanceOnScreen() {
         let leftShoeTotal = leftShoe.sensor1 + leftShoe.sensor2 + leftShoe.sensor3 + leftShoe.sensor4
         let rightShoeTotal = rightShoe.sensor1 + rightShoe.sensor2 + rightShoe.sensor3 + rightShoe.sensor4
         let overallTotal = leftShoeTotal + rightShoeTotal
