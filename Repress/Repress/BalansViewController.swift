@@ -62,7 +62,7 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
-        displayBalanceOnScreen(leftShoe: leftShoeData, rightShoe: rightShoeData)
+        //displayBalanceOnScreen(leftShoe: leftShoeData, rightShoe: rightShoeData)
     }
     
     // Display balance data on the screen
