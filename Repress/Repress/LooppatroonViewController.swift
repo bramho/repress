@@ -58,21 +58,22 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
     }
     func sensorDataReceivedFromShoe(_ data: Shoe) {
         if(data.getShoeType() == 1)  { // leftShoe
-            print("leftshoedata")
-            print(data.getShoe().getSensors())
-            var leftShoeData = data.getShoe().getSensors()
-            leftShoeSensor1.alpha = CGFloat(leftShoeData[1])
-            leftShoeSensor1.alpha = CGFloat(leftShoeData[2])
-            leftShoeSensor1.alpha = CGFloat(leftShoeData[0])
-            leftShoeSensor1.alpha = CGFloat(leftShoeData[3])
+            //print("leftshoedata")
+            //print(data.getShoe().getSensors())
+            var leftShoeData = data.getShoe()
+            print("leftShoeData" + String(describing: leftShoeData))
+            leftShoeSensor1.alpha = CGFloat(Float(leftShoeData.getSensor1()))
+            leftShoeSensor2.alpha = CGFloat(Float(leftShoeData.getSensor2()))
+            leftShoeSensor3.alpha = CGFloat(Float(leftShoeData.getSensor3()))
+            leftShoeSensor4.alpha = CGFloat(Float(leftShoeData.getSensor4()))
         } else if (data.getShoeType() == 2) {
-            print("rightshoedata")
-            print(data.getShoe().getSensors())
-            var rightShoeData = data.getShoe().getSensors()
-            rightShoeSensor1.alpha = CGFloat(rightShoeData[1])
-            rightShoeSensor2.alpha = CGFloat(rightShoeData[2])
-            rightShoeSensor3.alpha = CGFloat(rightShoeData[0])
-            rightShoeSensor4.alpha = CGFloat(rightShoeData[3])
+            //print("rightshoedata")
+            //print(data.getShoe().getSensors())
+            var rightShoeData: Shoe = data.getShoe()
+            rightShoeSensor1.alpha = CGFloat(Float(rightShoeData.getSensor2()))
+            rightShoeSensor2.alpha = CGFloat(Float(rightShoeData.getSensor3()))
+            rightShoeSensor3.alpha = CGFloat(Float(rightShoeData.getSensor1()))
+            rightShoeSensor4.alpha = CGFloat(Float(rightShoeData.getSensor4()))
         }
         
     }
