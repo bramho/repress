@@ -26,6 +26,7 @@
 		E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C5661F1FDE9ECC00DFB7D0 /* Assets.xcassets */; };
 		E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C566211FDE9ECC00DFB7D0 /* LaunchScreen.storyboard */; };
 		E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5662A1FDE9EFD00DFB7D0 /* GewichtViewController.swift */; };
+		E2F91A771FE1254E00C53745 /* TabbarSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F91A761FE1254E00C53745 /* TabbarSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E2C566221FDE9ECC00DFB7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C566241FDE9ECC00DFB7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C5662A1FDE9EFD00DFB7D0 /* GewichtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewichtViewController.swift; sourceTree = "<group>"; };
+		E2F91A761FE1254E00C53745 /* TabbarSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				25EAD3661FDEBC7C0073031A /* LiftFoot.swift */,
 				25EAD3681FDEBD140073031A /* BalanceFaker.swift */,
 				E22CEEC51FDED0C300362640 /* PatternFaker.swift */,
+				E2F91A761FE1254E00C53745 /* TabbarSize.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */,
 				25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */,
 				2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */,
+				E2F91A771FE1254E00C53745 /* TabbarSize.swift in Sources */,
 				2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */,
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
