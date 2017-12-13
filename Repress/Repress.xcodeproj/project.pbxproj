@@ -22,13 +22,17 @@
 		25EAD37D1FE00A380073031A /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD37C1FE00A380073031A /* ButtonStyles.swift */; };
 		E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */; };
 		E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC51FDED0C300362640 /* PatternFaker.swift */; };
+		E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A4491FE1441400717C3F /* GameViewController.swift */; };
+		E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2B0A44A1FE1441400717C3F /* GameScene.sks */; };
+		E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A44B1FE1441400717C3F /* GameScene.swift */; };
+		E2B0A4501FE14D9800717C3F /* ChangeBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */; };
+		E2B0A4521FE1564800717C3F /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A4511FE1564700717C3F /* RoundImageView.swift */; };
 		E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */; };
 		E2C5661B1FDE9ECC00DFB7D0 /* BalansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5661A1FDE9ECC00DFB7D0 /* BalansViewController.swift */; };
 		E2C5661E1FDE9ECC00DFB7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C5661C1FDE9ECC00DFB7D0 /* Main.storyboard */; };
 		E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C5661F1FDE9ECC00DFB7D0 /* Assets.xcassets */; };
 		E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C566211FDE9ECC00DFB7D0 /* LaunchScreen.storyboard */; };
 		E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5662A1FDE9EFD00DFB7D0 /* GewichtViewController.swift */; };
-		E2F91A771FE1254E00C53745 /* TabbarSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F91A761FE1254E00C53745 /* TabbarSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +51,11 @@
 		25EAD37C1FE00A380073031A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LooppatroonViewController.swift; path = Repress/LooppatroonViewController.swift; sourceTree = SOURCE_ROOT; };
 		E22CEEC51FDED0C300362640 /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
+		E2B0A4491FE1441400717C3F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E2B0A44A1FE1441400717C3F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E2B0A44B1FE1441400717C3F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackgroundColor.swift; sourceTree = "<group>"; };
+		E2B0A4511FE1564700717C3F /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		E2C566131FDE9ECC00DFB7D0 /* Repress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C5661A1FDE9ECC00DFB7D0 /* BalansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalansViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +64,6 @@
 		E2C566221FDE9ECC00DFB7D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C566241FDE9ECC00DFB7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2C5662A1FDE9EFD00DFB7D0 /* GewichtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GewichtViewController.swift; sourceTree = "<group>"; };
-		E2F91A761FE1254E00C53745 /* TabbarSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,7 @@
 				25EAD3661FDEBC7C0073031A /* LiftFoot.swift */,
 				25EAD3681FDEBD140073031A /* BalanceFaker.swift */,
 				E22CEEC51FDED0C300362640 /* PatternFaker.swift */,
-				E2F91A761FE1254E00C53745 /* TabbarSize.swift */,
+				E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -101,8 +109,19 @@
 			children = (
 				25EAD37A1FDFFBF80073031A /* Colors.swift */,
 				25EAD37C1FE00A380073031A /* ButtonStyles.swift */,
+				E2B0A4511FE1564700717C3F /* RoundImageView.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		E2B0A4481FE1441400717C3F /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				E2B0A4491FE1441400717C3F /* GameViewController.swift */,
+				E2B0A44A1FE1441400717C3F /* GameScene.sks */,
+				E2B0A44B1FE1441400717C3F /* GameScene.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 		E2C5660A1FDE9ECB00DFB7D0 = {
@@ -124,6 +143,7 @@
 		E2C566151FDE9ECC00DFB7D0 /* Repress */ = {
 			isa = PBXGroup;
 			children = (
+				E2B0A4481FE1441400717C3F /* Game */,
 				25EAD3771FDFFB080073031A /* Styles */,
 				25EAD36A1FDFD2F10073031A /* Backend */,
 				2577CFC81FDEA42200DB0FDA /* Classes */,
@@ -198,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */,
 				E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */,
 				E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */,
 				E2C5661E1FDE9ECC00DFB7D0 /* Main.storyboard in Resources */,
@@ -219,8 +240,10 @@
 				25EAD3711FDFD7BA0073031A /* Shoe.swift in Sources */,
 				E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */,
 				25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */,
+				E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */,
 				2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */,
-				E2F91A771FE1254E00C53745 /* TabbarSize.swift in Sources */,
+				E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */,
+				E2B0A4521FE1564800717C3F /* RoundImageView.swift in Sources */,
 				2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */,
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
@@ -230,6 +253,7 @@
 				E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */,
 				25EAD3731FDFD7BA0073031A /* Packet.swift in Sources */,
 				25EAD3761FDFD7BA0073031A /* ByteUtils.swift in Sources */,
+				E2B0A4501FE14D9800717C3F /* ChangeBackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

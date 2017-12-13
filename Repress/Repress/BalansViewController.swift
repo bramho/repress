@@ -28,9 +28,9 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        manager = ShoeManager.init()
-//        manager.delegate = self
-//        StateManager.instance.delegate = self
+        manager = ShoeManager.init()
+        manager.delegate = self
+        StateManager.instance.delegate = self
         
         // Start interval
         //balanceFaker.scheduledTimerWithTimeInterval()
@@ -68,7 +68,7 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
-        displayBalanceOnScreen(leftShoe: leftShoeData, rightShoe: rightShoeData)
+        displayBalanceOnScreen()
     }
     
     // Display balance data on the screen
