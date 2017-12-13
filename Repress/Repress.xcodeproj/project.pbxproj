@@ -18,6 +18,8 @@
 		25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36E1FDFD7B90073031A /* Connector.swift */; };
 		25EAD3751FDFD7BA0073031A /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36F1FDFD7B90073031A /* StateManager.swift */; };
 		25EAD3761FDFD7BA0073031A /* ByteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3701FDFD7BA0073031A /* ByteUtils.swift */; };
+		25EAD37B1FDFFBF80073031A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD37A1FDFFBF80073031A /* Colors.swift */; };
+		25EAD37D1FE00A380073031A /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD37C1FE00A380073031A /* ButtonStyles.swift */; };
 		E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */; };
 		E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC51FDED0C300362640 /* PatternFaker.swift */; };
 		E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 		25EAD36E1FDFD7B90073031A /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
 		25EAD36F1FDFD7B90073031A /* StateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		25EAD3701FDFD7BA0073031A /* ByteUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteUtils.swift; sourceTree = "<group>"; };
+		25EAD37A1FDFFBF80073031A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		25EAD37C1FE00A380073031A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LooppatroonViewController.swift; path = Repress/LooppatroonViewController.swift; sourceTree = SOURCE_ROOT; };
 		E22CEEC51FDED0C300362640 /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
 		E2C566131FDE9ECC00DFB7D0 /* Repress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repress.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,15 @@
 			path = Backend;
 			sourceTree = "<group>";
 		};
+		25EAD3771FDFFB080073031A /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				25EAD37A1FDFFBF80073031A /* Colors.swift */,
+				25EAD37C1FE00A380073031A /* ButtonStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		E2C5660A1FDE9ECB00DFB7D0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 		E2C566151FDE9ECC00DFB7D0 /* Repress */ = {
 			isa = PBXGroup;
 			children = (
+				25EAD3771FDFFB080073031A /* Styles */,
 				25EAD36A1FDFD2F10073031A /* Backend */,
 				2577CFC81FDEA42200DB0FDA /* Classes */,
 				E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */,
@@ -195,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */,
+				25EAD37B1FDFFBF80073031A /* Colors.swift in Sources */,
 				E2C5661B1FDE9ECC00DFB7D0 /* BalansViewController.swift in Sources */,
 				E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */,
 				25EAD3751FDFD7BA0073031A /* StateManager.swift in Sources */,
@@ -206,6 +221,7 @@
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
 				2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */,
+				25EAD37D1FE00A380073031A /* ButtonStyles.swift in Sources */,
 				25EAD3721FDFD7BA0073031A /* ShoeManager.swift in Sources */,
 				E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */,
 				25EAD3731FDFD7BA0073031A /* Packet.swift in Sources */,
