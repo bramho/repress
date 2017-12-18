@@ -22,7 +22,7 @@ class GameViewController: UIViewController, ShoeManagerDelegate, StateManagerDel
     
     func stateUpdated(_ state: Int, _ error: String?) {
         print("State: " + String(state))
-        print(error)
+        print(error as Any)
         
         if (state == StateManager.States.activated.rawValue) {
             manager.stopConnectionSession()

@@ -7,39 +7,59 @@
 //
 
 import SpriteKit
+import CoreMotion
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var player = SKSpriteNode()
     var endNode = SKSpriteNode()
 
+    var xValue : Double = 0
+    var yValue : Double = 0
     
     override func didMove(to view: SKView) {
         self.physicsWorld.contactDelegate = self
-        //self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        self.physicsWorld.gravity = CGVector(dx: CGFloat(xValue),dy: CGFloat(yValue))
+        print(self.physicsWorld.gravity)
         player = self.childNode(withName: "player") as! SKSpriteNode
-//        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(self.execute), userInfo: nil, repeats: true)
+        player.physicsBody = SKPhysicsBody(rectangleOf: player.size)
+        player.physicsBody?.affectedByGravity = true
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector:#selector(self.execute), userInfo: nil, repeats: false)
+
+    }
+    
+    @objc func execute() {
+        //print("x: " + String(xValue) + " y: " + String(yValue))
+        //xValue = 5
+        self.physicsWorld.gravity = CGVector(dx: CGFloat(xValue), dy: CGFloat(yValue))
+        print(self.physicsWorld.gravity)
     }
 
     func movePlayer(leftShoe: Shoe, rightShoe: Shoe){
-        let sensor1total = leftShoe.getSensor1() + rightShoe.getSensor3()
-        let sensor2total = leftShoe.getSensor2() + rightShoe.getSensor2()
-        let sensor3total = leftShoe.getSensor3() + rightShoe.getSensor1()
-        let sensor4total = leftShoe.getSensor4() + rightShoe.getSensor4()
+        let leftSensors = leftShoe.getSensors()
+        let rightSensors = rightShoe.getSensors()
+        let sensor1total = leftSensors[0] + rightSensors[2]
+        let sensor2total = leftSensors[1] + rightSensors[1]
+        let sensor3total = leftSensors[2] + rightSensors[0]
+        let sensor4total = leftSensors[3] + rightSensors[3]
+
+//        if(sensor1total > sensor3total) {
+//            xValue = 5
+//        } else {
+//            xValue = -5
+//        }
+//        if (sensor2total > sensor4total) {
+//            yValue = 5
+//        } else {
+//            yValue = -5
+//        }
+        //world.gravity = CGVector(dx: xValue, dy: yValue)
         
-        print("1 " + String(leftShoe.getSensor1()) + " " + String(rightShoe.getSensor3()))
-        print("2 " + String(leftShoe.getSensor2()) + " " + String(rightShoe.getSensor2()))
-        print("3 " + String(leftShoe.getSensor3()) + " " + String(rightShoe.getSensor1()))
-        print(" 4 " + String(leftShoe.getSensor4()) + " " + String(rightShoe.getSensor4()))
-        
-        
-        let x = sensor1total - sensor3total
-        let y = sensor2total - sensor4total
-        
-        //print("x: " + String(x))
-        //print("y: " + String(y))
-        
-        self.physicsWorld.gravity = CGVector(dx: x * 10, dy: y * 10)
+        xValue = 5
+        self.execute()
+
+        //execute(xvalue: xValue, yValue: yValue)
+        //print("x: " + String(xValue) + " y: " + String(yValue))
     }
     
     func didBeginConctact(contact: SKPhysicsContact) {

@@ -52,7 +52,7 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
     }
     func stateUpdated(_ state: Int, _ error: String?) {
         print("State: " + String(state))
-        print(error)
+        print(error as Any)
         
         if (state == StateManager.States.activated.rawValue) {
             manager.stopConnectionSession()
@@ -62,14 +62,15 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
         if(data.getShoeType() == 1)  { // leftShoe
             //print("leftshoedata")
             //print(data.getShoe().getSensors())
-            var leftShoeData = data.getShoe()
+            let leftShoeData = data.getShoe()
             print("leftShoeData" + String(describing: leftShoeData))
-            leftShoeSensor1.alpha = CGFloat(Float(leftShoeData.getSensor1()))
-            leftShoeSensor2.alpha = CGFloat(Float(leftShoeData.getSensor2()))
-            leftShoeSensor3.alpha = CGFloat(Float(leftShoeData.getSensor3()))
-            leftShoeSensor4.alpha = CGFloat(Float(leftShoeData.getSensor4()))
+            leftShoeSensor1.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor1()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            leftShoeSensor2.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor2()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            leftShoeSensor3.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor3()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            leftShoeSensor4.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor4()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
+
         } else if (data.getShoeType() == 2) {
-            var rightShoeData: Shoe = data.getShoe()
+            let rightShoeData: Shoe = data.getShoe()
             //print("rightshoedata")
             //print(data.getShoe().getSensors())
         

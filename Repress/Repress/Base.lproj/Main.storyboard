@@ -143,31 +143,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTB-TT-cMI" userLabel="Right Shoe Sensor 3">
-                                <rect key="frame" x="204" y="230" width="65" height="62"/>
+                                <rect key="frame" x="204" y="230" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcK-7G-9LA" userLabel="Right Shoe Sensor 2">
-                                <rect key="frame" x="282" y="230" width="61" height="61"/>
+                                <rect key="frame" x="282" y="230" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLX-Tj-L6I" userLabel="Right Shoe Sensor 1">
-                                <rect key="frame" x="225" y="425" width="65" height="65"/>
+                                <rect key="frame" x="225" y="425" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-0P-bn0" userLabel="Left Shoe Sensor 4">
-                                <rect key="frame" x="76" y="145" width="35" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-0P-bn0" userLabel="Left Shoe Sensor 4">
+                                <rect key="frame" x="76" y="145" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Ml-9IX" userLabel="Left Shoe Sensor 3">
-                                <rect key="frame" x="120" y="257" width="35" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Gm-mUZ" userLabel="Left Shoe Sensor 2">
+                                <rect key="frame" x="22" y="230" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Gm-mUZ" userLabel="Left Shoe Sensor 2">
-                                <rect key="frame" x="28" y="257" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cirkeltjes" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-mh-pwc" userLabel="Left Shoe Sensor 1">
-                                <rect key="frame" x="87" y="439" width="35" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-mh-pwc" userLabel="Left Shoe Sensor 1">
+                                <rect key="frame" x="85" y="425" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg">
@@ -179,13 +175,12 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-rA-09f" userLabel="Right Shoe Sensor 4" customClass="RoundImageView" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="233" y="137" width="57" height="57"/>
+                                <rect key="frame" x="233" y="137" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Ml-9IX" userLabel="Left Shoe Sensor 3">
+                                <rect key="frame" x="97" y="230" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -229,7 +224,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Cirkeltjes" width="45" height="45"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
         <image name="first" width="30" height="30"/>
