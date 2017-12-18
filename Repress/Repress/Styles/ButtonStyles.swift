@@ -12,6 +12,9 @@ class ButtonStyles {
     static func applyButtonStyles() {
         let button = UIButton.appearance()
         button.titleLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 18.0)
+        button.titleLabel?.numberOfLines = 1
+        button.titleLabel?.adjustsFontSizeToFitWidth = true
+        button.cornerRadius = 12
         
         let orangeButton = OrangeButton.appearance()
         orangeButton.setTitleColor(UIColor.white, for: .normal)
