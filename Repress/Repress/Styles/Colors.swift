@@ -8,4 +8,5 @@
 
 import UIKit
 
-let orange = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+let repressOrange = UIColor(red: 255/255, green: 97/255, blue: 0/255, alpha: 1)
+let repressBlue = UIColor(red: 43/255, green: 63/255, blue: 97/255, alpha: 1)
