@@ -10,6 +10,11 @@
 		2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFC91FDEA44400DB0FDA /* AddRandomFunctionToInt.swift */; };
 		2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFCB1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift */; };
 		2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */; };
+		25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */; };
+		25A0EE5A1FE7FC000045E45E /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */; };
+		25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */; };
+		25A0EE5E1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5D1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift */; };
+		25A0EE601FE7FEF10045E45E /* Logo-GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */; };
 		25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3661FDEBC7C0073031A /* LiftFoot.swift */; };
 		25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3681FDEBD140073031A /* BalanceFaker.swift */; };
 		25EAD3711FDFD7BA0073031A /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36B1FDFD7B90073031A /* Shoe.swift */; };
@@ -39,6 +44,11 @@
 		2577CFC91FDEA44400DB0FDA /* AddRandomFunctionToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRandomFunctionToInt.swift; sourceTree = "<group>"; };
 		2577CFCB1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDataNormalizer.swift; sourceTree = "<group>"; };
 		2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValue.swift; sourceTree = "<group>"; };
+		25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Loading-animatie.gif"; sourceTree = "<group>"; };
+		25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
+		25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
+		25A0EE5D1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
+		25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Logo-GIF.gif"; sourceTree = "<group>"; };
 		25EAD3661FDEBC7C0073031A /* LiftFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftFoot.swift; sourceTree = "<group>"; };
 		25EAD3681FDEBD140073031A /* BalanceFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceFaker.swift; sourceTree = "<group>"; };
 		25EAD36B1FDFD7B90073031A /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
@@ -89,6 +99,25 @@
 				E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		25A0EE551FE7FBAD0045E45E /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */,
+				25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
+		25A0EE581FE7FBC20045E45E /* SwiftyGif */ = {
+			isa = PBXGroup;
+			children = (
+				25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */,
+				25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */,
+				25A0EE5D1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift */,
+			);
+			path = SwiftyGif;
 			sourceTree = "<group>";
 		};
 		25EAD36A1FDFD2F10073031A /* Backend */ = {
@@ -143,6 +172,8 @@
 		E2C566151FDE9ECC00DFB7D0 /* Repress */ = {
 			isa = PBXGroup;
 			children = (
+				25A0EE581FE7FBC20045E45E /* SwiftyGif */,
+				25A0EE551FE7FBAD0045E45E /* Gifs */,
 				E2B0A4481FE1441400717C3F /* Game */,
 				25EAD3771FDFFB080073031A /* Styles */,
 				25EAD36A1FDFD2F10073031A /* Backend */,
@@ -220,7 +251,9 @@
 			files = (
 				E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */,
 				E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */,
+				25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */,
 				E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */,
+				25A0EE601FE7FEF10045E45E /* Logo-GIF.gif in Resources */,
 				E2C5661E1FDE9ECC00DFB7D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,9 +275,11 @@
 				25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */,
 				E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */,
 				2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */,
+				25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */,
 				E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */,
 				E2B0A4521FE1564800717C3F /* RoundImageView.swift in Sources */,
 				2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */,
+				25A0EE5E1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift in Sources */,
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
 				2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */,
@@ -254,6 +289,7 @@
 				25EAD3731FDFD7BA0073031A /* Packet.swift in Sources */,
 				25EAD3761FDFD7BA0073031A /* ByteUtils.swift in Sources */,
 				E2B0A4501FE14D9800717C3F /* ChangeBackgroundColor.swift in Sources */,
+				25A0EE5A1FE7FC000045E45E /* SwiftyGifManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
