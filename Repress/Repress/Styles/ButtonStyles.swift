@@ -10,6 +10,9 @@ import UIKit
 
 class ButtonStyles {
     static func applyButtonStyles() {
+        let button = UIButton.appearance()
+        button.titleLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 18.0)
+        
         let orangeButton = OrangeButton.appearance()
         orangeButton.setTitleColor(UIColor.white, for: .normal)
         orangeButton.backgroundColor = UIColor.orange
@@ -23,3 +26,16 @@ class ButtonStyles {
 class OrangeButton: UIButton {}
 
 class WhiteButton: UIButton {}
+
+
+extension UIButton {
+    @objc dynamic var cornerRadius: CGFloat {
+        get { return layer.cornerRadius }
+        set { layer.cornerRadius = newValue }
+    }
+    
+    @objc dynamic var titleLabelFont: UIFont! {
+        get { return self.titleLabel?.font }
+        set { self.titleLabel?.font = newValue }
+    }
+}

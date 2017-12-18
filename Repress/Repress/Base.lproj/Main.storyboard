@@ -25,7 +25,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-n8-jcC" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="100" y="220" width="174" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Orange Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="tE6-r8-lkB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2r-xn-VPK" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="100" y="313" width="174" height="30"/>
@@ -67,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ZE-C4-Xne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1813" y="262"/>
+            <point key="canvasLocation" x="913" y="-275"/>
         </scene>
         <!--Balans-->
         <scene sceneID="138-4M-vp2">
@@ -200,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImZ-kR-KqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.30468749999989" y="-620.3125"/>
+            <point key="canvasLocation" x="913" y="-806"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
