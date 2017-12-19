@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v53-43-6Wy">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -67,11 +67,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VM9-BY-wOl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Balansspel" id="EXw-F2-fh0"/>
+                    <tabBarItem key="tabBarItem" title="Balansspel" id="EXw-F2-fh0">
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ZE-C4-Xne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="-275"/>
+            <point key="canvasLocation" x="913" y="-274"/>
         </scene>
         <!--Balans-->
         <scene sceneID="138-4M-vp2">
@@ -206,14 +208,40 @@
             </objects>
             <point key="canvasLocation" x="913" y="-806"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Launch Screen View Controller-->
+        <scene sceneID="6Cr-Jz-6cn">
+            <objects>
+                <viewController id="v53-43-6Wy" customClass="LaunchScreenViewController" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Qb-dh-3wx">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-U2-MQc">
+                                <rect key="frame" x="120" y="352" width="528" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BP4-bF-ncp"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="gJc-U2-MQc" id="xxP-h0-wpM"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="loadingScreenSegue" id="8S4-ZJ-ob1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nq-Ca-yOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1327.34375" y="-18.1640625"/>
+        </scene>
+        <!--Orange Tabbar-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <size key="freeformSize" width="1024" height="768"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="barTintColor" red="1" green="0.3803921569" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
