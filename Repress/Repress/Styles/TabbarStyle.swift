@@ -8,3 +8,14 @@
 
 import Foundation
 import UIKit
+
+
+class TabbarItemStyles {
+    static func applyTabbarItemStyles() {
+        let tabbar = UITabBarItem.appearance()
+        tabbar.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.black], for: .normal)
+        tabbar.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .selected)
+    }
+}
+
+class TabbarItem: UITabBarItem {}

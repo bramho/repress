@@ -40,7 +40,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gewicht" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +67,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VM9-BY-wOl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Balansspel" id="EXw-F2-fh0">
+                    <tabBarItem key="tabBarItem" selectedImage="balans.png" systemItem="mostViewed" id="EXw-F2-fh0">
                         <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                 </viewController>
@@ -120,7 +120,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vAK-dS-wS9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Balans" image="first" id="a57-tF-vbT"/>
+                    <tabBarItem key="tabBarItem" title="Balans" image="20pxBalans.png" landscapeImage="20pxBalans.png" largeContentSizeImage="20pxBalans.png" selectedImage="20pxBalans.png" id="a57-tF-vbT"/>
                     <connections>
                         <outlet property="leftShoeBar" destination="uMB-NN-A0u" id="t8M-I6-W9b"/>
                         <outlet property="leftShoeLabel" destination="WQ3-Vp-SYb" id="arb-5O-76B"/>
@@ -192,7 +192,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Looppatroon" image="first" id="NBx-MS-OgY"/>
+                    <tabBarItem key="tabBarItem" title="Looppatroon" image="20pxLooppatroonIcon.png" landscapeImage="20pxLooppatroonIcon.png" largeContentSizeImage="20pxLooppatroonIcon.png" selectedImage="20pxLooppatroonIcon.png" id="NBx-MS-OgY">
+                        <color key="badgeColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="leftShoeSensor1" destination="Wq5-Ml-9IX" id="ag4-Ch-Lcq"/>
                         <outlet property="leftShoeSensor2" destination="Rgw-0P-bn0" id="JQF-ZH-tAH"/>
@@ -256,9 +263,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="20pxBalans.png" width="50" height="51"/>
+        <image name="20pxGewicht.png" width="50" height="51"/>
+        <image name="20pxLooppatroonIcon.png" width="50" height="51"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="balans.png" width="50" height="50"/>
     </resources>
 </document>

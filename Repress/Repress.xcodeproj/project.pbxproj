@@ -14,6 +14,9 @@
 		257B50B11FE9286100CF3D7E /* Loading-animatie-formaat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 257B50B01FE9286100CF3D7E /* Loading-animatie-formaat.gif */; };
 		257B50B31FE9292100CF3D7E /* Screenframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50B21FE9292100CF3D7E /* Screenframe.png */; };
 		257B50B71FE92F4800CF3D7E /* TabbarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B50B61FE92F4800CF3D7E /* TabbarStyle.swift */; };
+		257B50C01FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50BF1FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png */; };
+		257B50C21FE93FA800CF3D7E /* 20pxBalans.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50C11FE93FA800CF3D7E /* 20pxBalans.png */; };
+		257B50C41FE93FAF00CF3D7E /* 20pxGewicht.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */; };
 		25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */; };
 		25A0EE5A1FE7FC000045E45E /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */; };
 		25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */; };
@@ -52,6 +55,9 @@
 		257B50B01FE9286100CF3D7E /* Loading-animatie-formaat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Loading-animatie-formaat.gif"; sourceTree = "<group>"; };
 		257B50B21FE9292100CF3D7E /* Screenframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenframe.png; sourceTree = "<group>"; };
 		257B50B61FE92F4800CF3D7E /* TabbarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarStyle.swift; sourceTree = "<group>"; };
+		257B50BF1FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20pxLooppatroonIcon.png; sourceTree = "<group>"; };
+		257B50C11FE93FA800CF3D7E /* 20pxBalans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20pxBalans.png; sourceTree = "<group>"; };
+		257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20pxGewicht.png; sourceTree = "<group>"; };
 		25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Loading-animatie.gif"; sourceTree = "<group>"; };
 		25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
 		25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
@@ -107,6 +113,16 @@
 				E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		257B50BC1FE93CDB00CF3D7E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				257B50BF1FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png */,
+				257B50C11FE93FA800CF3D7E /* 20pxBalans.png */,
+				257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		25A0EE551FE7FBAD0045E45E /* Gifs */ = {
@@ -183,6 +199,7 @@
 		E2C566151FDE9ECC00DFB7D0 /* Repress */ = {
 			isa = PBXGroup;
 			children = (
+				257B50BC1FE93CDB00CF3D7E /* images */,
 				25A0EE581FE7FBC20045E45E /* SwiftyGif */,
 				25A0EE551FE7FBAD0045E45E /* Gifs */,
 				E2B0A4481FE1441400717C3F /* Game */,
@@ -262,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */,
+				257B50C41FE93FAF00CF3D7E /* 20pxGewicht.png in Resources */,
 				E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */,
 				25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */,
 				E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */,
+				257B50C21FE93FA800CF3D7E /* 20pxBalans.png in Resources */,
 				257B50B11FE9286100CF3D7E /* Loading-animatie-formaat.gif in Resources */,
+				257B50C01FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png in Resources */,
 				257B50B31FE9292100CF3D7E /* Screenframe.png in Resources */,
 				25A0EE601FE7FEF10045E45E /* Logo-GIF.gif in Resources */,
 				E2C5661E1FDE9ECC00DFB7D0 /* Main.storyboard in Resources */,

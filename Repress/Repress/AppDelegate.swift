@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Apply button and tabbar styles
         ButtonStyles.applyButtonStyles()
-        TabbarStyles.applyTabbarStyles()
+        TabbarItemStyles.applyTabbarItemStyles()
         
         return true
     }
