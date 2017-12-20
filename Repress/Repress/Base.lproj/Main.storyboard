@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,11 +97,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target">
-                        <color key="badgeColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                    </tabBarItem>
-=======
                     <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target"/>
                     <connections>
                         <outlet property="leftShoePercentageLabel" destination="CiW-N3-7z9" id="6ua-ZR-pb8"/>
@@ -109,7 +105,6 @@
                         <outlet property="rightShoeWeightLabel" destination="8c3-Qc-3Ir" id="Ywr-Nb-ht3"/>
                         <outlet property="weightLabel" destination="gMq-de-GkF" id="Dle-ZN-fVw"/>
                     </connections>
->>>>>>> f913becc06771ce25408a6078326d60ec5c26e22
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,28 +235,6 @@
                                 <rect key="frame" x="496" y="465" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-<<<<<<< HEAD
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-m1-jnI">
-                                <rect key="frame" x="226" y="240" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="264" y="704" width="250" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="264" y="814" width="250" height="50"/>
-=======
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-0P-bn0" userLabel="Left Shoe Sensor 4">
                                 <rect key="frame" x="213" y="181" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -278,16 +251,24 @@
                                 <rect key="frame" x="235" y="266" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg">
-                                <rect key="frame" x="329" y="782" width="111" height="51"/>
->>>>>>> f913becc06771ce25408a6078326d60ec5c26e22
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-m1-jnI">
+                                <rect key="frame" x="226" y="240" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="259" y="710" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
+                                    <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBI-L7-YEC">
                                 <rect key="frame" x="259" y="382" width="56" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -318,7 +299,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-=======
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looppatroon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAg-Ax-acG" customClass="TitleLabel" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="20" y="61" width="728" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -326,7 +306,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
->>>>>>> f913becc06771ce25408a6078326d60ec5c26e22
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="259" y="790" width="250" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
@@ -340,10 +327,10 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
-                        <outlet property="leftShoeSensorView1" destination="U7O-94-SXS" id="yBB-a9-151"/>
-                        <outlet property="leftShoeSensorView2" destination="LEK-uw-LCk" id="Cix-Ev-lXi"/>
-                        <outlet property="leftShoeSensorView3" destination="W4C-m1-jnI" id="Wwl-sA-ChB"/>
-                        <outlet property="leftShoeSensorView4" destination="bBI-L7-YEC" id="XHv-3Y-xmi"/>
+                        <outlet property="leftShoeSensorView1" destination="U7O-94-SXS" id="s6q-MO-SJY"/>
+                        <outlet property="leftShoeSensorView2" destination="LEK-uw-LCk" id="DQ2-C9-I7S"/>
+                        <outlet property="leftShoeSensorView3" destination="W4C-m1-jnI" id="QYd-lm-FZa"/>
+                        <outlet property="leftShoeSensorView4" destination="bBI-L7-YEC" id="5ti-wr-xeY"/>
                         <outlet property="rightShoeSensor1" destination="zTB-TT-cMI" id="vYH-ZH-Up7"/>
                         <outlet property="rightShoeSensor2" destination="C0E-rA-09f" id="Fbe-Up-EZM"/>
                         <outlet property="rightShoeSensor3" destination="wcK-7G-9LA" id="opW-Rf-QBc"/>
@@ -352,11 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImZ-kR-KqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
-            <point key="canvasLocation" x="912.5" y="-1013.0859374999999"/>
-=======
-            <point key="canvasLocation" x="890" y="-990"/>
->>>>>>> f913becc06771ce25408a6078326d60ec5c26e22
+            <point key="canvasLocation" x="890" y="-1208"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="6Cr-Jz-6cn">
@@ -383,16 +366,11 @@
             </objects>
             <point key="canvasLocation" x="-1327.34375" y="-18.1640625"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Orange Tabbar-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-<<<<<<< HEAD
-                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
-=======
                 <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
->>>>>>> f913becc06771ce25408a6078326d60ec5c26e22
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
