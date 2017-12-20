@@ -9,9 +9,9 @@
 import UIKit
 import SpriteKit
 
-class GameViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate {
+class GameViewController: UIViewController {
     
-    var manager : ShoeManager!
+//    var manager : ShoeManager!
     
     var leftShoe: Shoe!
     var rightShoe: Shoe!
@@ -20,37 +20,37 @@ class GameViewController: UIViewController, ShoeManagerDelegate, StateManagerDel
     
     var i = 0
     
-    func stateUpdated(_ state: Int, _ error: String?) {
-        print("State: " + String(state))
-        print(error as Any)
-        
-        if (state == StateManager.States.activated.rawValue) {
-            manager.stopConnectionSession()
-        }
-    }
+//    func stateUpdated(_ state: Int, _ error: String?) {
+//        print("State: " + String(state))
+//        print(error as Any)
+//
+//        if (state == StateManager.States.activated.rawValue) {
+//            manager.stopConnectionSession()
+//        }
+//    }
     
-    func sensorDataReceivedFromShoe(_ data: Shoe) {
-        if(data.getShoeType() == 1)  { // leftShoe
-            print("leftshoedata")
-            print(data.getShoe().getSensors())
-            self.leftShoe = data.getShoe()
-        } else if (data.getShoeType() == 2) {
-            print("rightshoedata")
-            print(data.getShoe().getSensors())
-            self.rightShoe = data.getShoe()
-        }
-        
-        if (leftShoe != nil && rightShoe != nil) {
-            game.movePlayer(leftShoe: leftShoe, rightShoe: rightShoe)
-        }
-    }
+//    func sensorDataReceivedFromShoe(_ data: Shoe) {
+//        if(data.getShoeType() == 1)  { // leftShoe
+//            print("leftshoedata")
+//            print(data.getShoe().getSensors())
+//            self.leftShoe = data.getShoe()
+//        } else if (data.getShoeType() == 2) {
+//            print("rightshoedata")
+//            print(data.getShoe().getSensors())
+//            self.rightShoe = data.getShoe()
+//        }
+//
+//        if (leftShoe != nil && rightShoe != nil) {
+//            game.movePlayer(leftShoe: leftShoe, rightShoe: rightShoe)
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        manager = ShoeManager.init()
-        manager.delegate = self
-        StateManager.instance.delegate = self
+//        manager = ShoeManager.init()
+//        manager.delegate = self
+//        StateManager.instance.delegate = self
         
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
@@ -95,12 +95,5 @@ class GameViewController: UIViewController, ShoeManagerDelegate, StateManagerDel
     
     func prefersStatusBarHidden() -> Bool {
         return true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if(i == 0) {
-            manager.startConnectionSession()
-        }
-        i = 1
     }
 }
