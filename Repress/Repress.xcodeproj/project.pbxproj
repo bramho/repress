@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFC91FDEA44400DB0FDA /* AddRandomFunctionToInt.swift */; };
+		2505B8801FEA69E5001413CB /* WeightFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2505B87F1FEA69E5001413CB /* WeightFaker.swift */; };
 		2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFCB1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift */; };
 		2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */; };
 		257B50AE1FE90E3300CF3D7E /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B50AC1FE90E3300CF3D7E /* LaunchScreenViewController.swift */; };
@@ -23,6 +23,7 @@
 		25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */; };
 		25A0EE5E1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5D1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift */; };
 		25A0EE601FE7FEF10045E45E /* Logo-GIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */; };
+		25B32C971FEA9F5C004D73B2 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B32C961FEA9F5C004D73B2 /* IntExtensions.swift */; };
 		25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3661FDEBC7C0073031A /* LiftFoot.swift */; };
 		25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD3681FDEBD140073031A /* BalanceFaker.swift */; };
 		25EAD3711FDFD7BA0073031A /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EAD36B1FDFD7B90073031A /* Shoe.swift */; };
@@ -49,7 +50,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2577CFC91FDEA44400DB0FDA /* AddRandomFunctionToInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRandomFunctionToInt.swift; sourceTree = "<group>"; };
+		2505B87F1FEA69E5001413CB /* WeightFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightFaker.swift; sourceTree = "<group>"; };
 		2577CFCB1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDataNormalizer.swift; sourceTree = "<group>"; };
 		2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorValue.swift; sourceTree = "<group>"; };
 		257B50AC1FE90E3300CF3D7E /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
 		25A0EE5D1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SwiftyGif.swift"; sourceTree = "<group>"; };
 		25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Logo-GIF.gif"; sourceTree = "<group>"; };
+		25B32C961FEA9F5C004D73B2 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		25EAD3661FDEBC7C0073031A /* LiftFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftFoot.swift; sourceTree = "<group>"; };
 		25EAD3681FDEBD140073031A /* BalanceFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceFaker.swift; sourceTree = "<group>"; };
 		25EAD36B1FDFD7B90073031A /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
@@ -106,13 +108,14 @@
 		2577CFC81FDEA42200DB0FDA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2577CFC91FDEA44400DB0FDA /* AddRandomFunctionToInt.swift */,
 				2577CFCB1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift */,
 				2577CFCD1FDEA4E700DB0FDA /* SensorValue.swift */,
 				25EAD3661FDEBC7C0073031A /* LiftFoot.swift */,
 				25EAD3681FDEBD140073031A /* BalanceFaker.swift */,
 				E22CEEC51FDED0C300362640 /* PatternFaker.swift */,
 				E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */,
+				2505B87F1FEA69E5001413CB /* WeightFaker.swift */,
+				25B32C961FEA9F5C004D73B2 /* IntExtensions.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -311,8 +314,10 @@
 				E2C5662B1FDE9EFD00DFB7D0 /* GewichtViewController.swift in Sources */,
 				25EAD3741FDFD7BA0073031A /* Connector.swift in Sources */,
 				257B50C61FE9470100CF3D7E /* LabelStyles.swift in Sources */,
+				2505B8801FEA69E5001413CB /* WeightFaker.swift in Sources */,
 				E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */,
 				2577CFCE1FDEA4E700DB0FDA /* SensorValue.swift in Sources */,
+				25B32C971FEA9F5C004D73B2 /* IntExtensions.swift in Sources */,
 				25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */,
 				E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */,
 				E2B0A4521FE1564800717C3F /* RoundUIView.swift in Sources */,
@@ -321,7 +326,6 @@
 				25A0EE5E1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift in Sources */,
 				E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */,
 				25EAD3691FDEBD140073031A /* BalanceFaker.swift in Sources */,
-				2577CFCA1FDEA44400DB0FDA /* AddRandomFunctionToInt.swift in Sources */,
 				25EAD37D1FE00A380073031A /* ButtonStyles.swift in Sources */,
 				257B50B71FE92F4800CF3D7E /* TabbarStyle.swift in Sources */,
 				25EAD3721FDFD7BA0073031A /* ShoeManager.swift in Sources */,
