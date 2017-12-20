@@ -28,9 +28,14 @@ class GewichtViewController: UIViewController {
     
     func displayWeightDistrubution(weight: Double) {
         let leftShoeWeight = weightFaker.devideWeight(weight: weight)
-        
+        let rightShoeWeight = weightFaker.getRightShoeWeight(totalWeight: weight, leftShoeWeight: leftShoeWeight)
         self.leftShoeWeightLabel.text = String(leftShoeWeight) + "KG"
-        self.rightShoeWeightLabel.text = String(weightFaker.getRightShoeWeight(totalWeight: weight, leftShoeWeight: leftShoeWeight)) + "KG"
+        self.rightShoeWeightLabel.text = String(rightShoeWeight) + "KG"
+        
+        self.leftShoePercentageLabel.text = String(Int((leftShoeWeight / weight) * 100)) + "%"
+        self.rightShoePercentageLabel.text = String(Int((rightShoeWeight / weight) * 100)) + "%"
+        
+//        print(Int.percentage(value1: leftShoeWeight, value2: rightShoeWeight))
     }
     
     @IBAction func button1(_ sender: Any) {
