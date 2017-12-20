@@ -76,7 +76,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target"/>
+                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target">
+                        <color key="badgeColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,14 +179,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Links zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-zs-Md9">
-                                <rect key="frame" x="155" y="157" width="154" height="393"/>
+                                <rect key="frame" x="219" y="157" width="121" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rechts zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-Rc-b41">
-                                <rect key="frame" x="459" y="157" width="155" height="393"/>
+                                <rect key="frame" x="442" y="157" width="121" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-rA-09f" userLabel="Right Shoe Sensor 4" customClass="RoundImageView" customModule="Repress" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-rA-09f" userLabel="Right Shoe Sensor 4">
                                 <rect key="frame" x="496" y="181" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -200,30 +202,62 @@
                                 <rect key="frame" x="496" y="465" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-0P-bn0" userLabel="Left Shoe Sensor 4">
-                                <rect key="frame" x="213" y="181" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Gm-mUZ" userLabel="Left Shoe Sensor 2">
-                                <rect key="frame" x="163" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-mh-pwc" userLabel="Left Shoe Sensor 1">
-                                <rect key="frame" x="213" y="465" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Ml-9IX" userLabel="Left Shoe Sensor 3">
-                                <rect key="frame" x="235" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg">
-                                <rect key="frame" x="329" y="831" width="111" height="51"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-m1-jnI">
+                                <rect key="frame" x="226" y="240" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="264" y="704" width="250" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="264" y="814" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBI-L7-YEC">
+                                <rect key="frame" x="259" y="382" width="56" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="28"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-94-SXS">
+                                <rect key="frame" x="281" y="240" width="51" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEK-uw-LCk">
+                                <rect key="frame" x="259" y="159" width="59" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="29"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
@@ -237,10 +271,10 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
-                        <outlet property="leftShoeSensor1" destination="Wq5-Ml-9IX" id="ag4-Ch-Lcq"/>
-                        <outlet property="leftShoeSensor2" destination="Rgw-0P-bn0" id="JQF-ZH-tAH"/>
-                        <outlet property="leftShoeSensor3" destination="XDe-Gm-mUZ" id="CXo-Zq-j9k"/>
-                        <outlet property="leftShoeSensor4" destination="sSh-mh-pwc" id="hox-hH-UUO"/>
+                        <outlet property="leftShoeSensorView1" destination="U7O-94-SXS" id="yBB-a9-151"/>
+                        <outlet property="leftShoeSensorView2" destination="LEK-uw-LCk" id="Cix-Ev-lXi"/>
+                        <outlet property="leftShoeSensorView3" destination="W4C-m1-jnI" id="Wwl-sA-ChB"/>
+                        <outlet property="leftShoeSensorView4" destination="bBI-L7-YEC" id="XHv-3Y-xmi"/>
                         <outlet property="rightShoeSensor1" destination="zTB-TT-cMI" id="vYH-ZH-Up7"/>
                         <outlet property="rightShoeSensor2" destination="C0E-rA-09f" id="Fbe-Up-EZM"/>
                         <outlet property="rightShoeSensor3" destination="wcK-7G-9LA" id="opW-Rf-QBc"/>
@@ -249,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImZ-kR-KqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.89062499999989" y="-806.25"/>
+            <point key="canvasLocation" x="912.5" y="-1013.0859374999999"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="6Cr-Jz-6cn">
@@ -276,11 +310,11 @@
             </objects>
             <point key="canvasLocation" x="-1327.34375" y="-18.1640625"/>
         </scene>
-        <!--Orange Tabbar-->
+        <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
+                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

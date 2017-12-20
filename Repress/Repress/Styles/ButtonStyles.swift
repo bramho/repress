@@ -33,7 +33,7 @@ class WhiteButton: UIButton {}
 
 
 extension UIButton {
-    @objc dynamic var cornerRadius: CGFloat {
+    @objc dynamic override var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
         set { layer.cornerRadius = newValue }
     }
