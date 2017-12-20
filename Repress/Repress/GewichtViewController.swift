@@ -10,12 +10,35 @@ import Foundation
 import UIKit
 
 class GewichtViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    let weightFaker = WeightFaker.init()
+    
+    @IBOutlet weak var weightLabel: LargeBlueLabel!
+    
+    @IBOutlet weak var leftShoePercentageLabel: SmallBlueLabel!
+    @IBOutlet weak var leftShoeWeightLabel: SmallBlueLabel!
+    
+    @IBOutlet weak var rightShoeWeightLabel: SmallBlueLabel!
+    @IBOutlet weak var rightShoePercentageLabel: SmallBlueLabel!
+    
+    @IBAction func demoButton(_ sender: Any) {
+        let weight: Double = weightFaker.getRandomWeight()
+        self.weightLabel.text = String(weight)
+        displayWeightDistrubution(weight: weight)
+    }
+    
+    func displayWeightDistrubution(weight: Double) {
+        let leftShoeWeight = weightFaker.devideWeight(weight: weight)
+        
+        self.leftShoeWeightLabel.text = String(leftShoeWeight) + "KG"
+        self.rightShoeWeightLabel.text = String(weightFaker.getRightShoeWeight(totalWeight: weight, leftShoeWeight: leftShoeWeight)) + "KG"
     }
     
     @IBAction func button1(_ sender: Any) {
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
