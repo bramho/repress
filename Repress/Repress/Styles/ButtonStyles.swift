@@ -20,8 +20,8 @@ class ButtonStyles {
         orangeButton.setTitleColor(UIColor.white, for: .normal)
         orangeButton.setBackgroundImage(imageFromColor(repressOrange), for: .normal)
         
-        orangeButton.setTitleColor(repressBlue, for: .disabled)
-        orangeButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
+        //orangeButton.setTitleColor(repressBlue, for: .disabled)
+        //orangeButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
         
         let whiteButton = WhiteButton.appearance()
         whiteButton.setTitleColor(repressOrange, for: .normal)
