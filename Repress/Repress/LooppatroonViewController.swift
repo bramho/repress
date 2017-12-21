@@ -17,18 +17,47 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
     @IBOutlet weak var leftShoeSensor1: UIImageView!
     
     //Right Shoe
-    
     @IBOutlet weak var rightShoeSensor4: UIImageView!
     @IBOutlet weak var rightShoeSensor3: UIImageView!
     @IBOutlet weak var rightShoeSensor2: UIImageView!
     @IBOutlet weak var rightShoeSensor1: UIImageView!
     
-    @IBAction func fakerActivationButton(_ sender: Any) {
-        patternFaker.scheduledTimerWithTimeInterval()
+    var patternFakerIsRunning: Bool = false
+    
+    var currentState: Int!
+    
+    @IBOutlet weak var demoButton: WhiteButton!
+    @IBAction func demoButton(_ sender: Any) {
+        if (currentState != StateManager.States.activating.rawValue && currentState != StateManager.States.activated.rawValue && currentState != StateManager.States.initialized.rawValue && currentState != StateManager.States.verified.rawValue) && currentState != StateManager.States.starting.rawValue {
+            if (patternFakerIsRunning) {
+                // Stop interval
+                patternFakerIsRunning = false
+                patternFaker.clearTimer()
+                resetPatternScreen()
+                demoButton.setTitle("Start demo", for: .normal)
+            } else {
+                // Start balance faker
+                patternFakerIsRunning = true
+                patternFaker.scheduledTimerWithTimeInterval()
+                demoButton.setTitle("Stop demo", for: .normal)
+            }
+        }
     }
     
-    @IBAction func tempActivationButton(_ sender: Any) {
-        manager.startConnectionSession()
+    @IBOutlet weak var looppatroonButton: OrangeButton!
+    @IBAction func looppatroonButton(_ sender: Any) {
+        if (!patternFakerIsRunning) {
+            if (currentState == StateManager.States.activating.rawValue) {
+                manager.stopConnectionSession()
+                looppatroonButton.setTitle("Start meten", for: .normal)
+            } else if (currentState == StateManager.States.connected.rawValue || currentState == StateManager.States.stopped.rawValue || currentState == StateManager.States.completed.rawValue) {
+                // Start shoe connection
+                manager.startConnectionSession()
+                looppatroonButton.setTitle("Stop met verbinden", for: .normal)
+            } else if (currentState == StateManager.States.activated.rawValue) {
+                looppatroonButton.setTitle("Start meten", for: .normal)
+            }
+        }
     }
     var patternFaker = PatternFaker()
     var manager : ShoeManager!
@@ -51,6 +80,7 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
         NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewShoeData(notification:)), name: Notification.Name("NewSensorData"), object: nil)
     }
     func stateUpdated(_ state: Int, _ error: String?) {
+        currentState = state
         print("State: " + String(state))
         print(error as Any)
         
@@ -102,6 +132,18 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
         rightShoeSensor1.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor2 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
         rightShoeSensor3.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor3 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
         rightShoeSensor2.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor4 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+    }
+    
+    func resetPatternScreen(){
+        leftShoeSensor4.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor1.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor3.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor2.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        
+        rightShoeSensor4.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor1.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor3.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor2.backgroundColor = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

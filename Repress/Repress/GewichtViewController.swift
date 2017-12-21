@@ -34,11 +34,6 @@ class GewichtViewController: UIViewController {
         
         self.leftShoePercentageLabel.text = String(Int((leftShoeWeight / weight) * 100)) + "%"
         self.rightShoePercentageLabel.text = String(Int((rightShoeWeight / weight) * 100)) + "%"
-        
-//        print(Int.percentage(value1: leftShoeWeight, value2: rightShoeWeight))
-    }
-    
-    @IBAction func button1(_ sender: Any) {
     }
     
     override func viewDidLoad() {
