@@ -86,7 +86,7 @@
                                 <state key="normal" title="Meten"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-zr-5dl" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="399" y="732" width="200" height="50"/>
+                                <rect key="frame" x="400" y="732" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Demo"/>
                                 <connections>
@@ -217,25 +217,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoe_Left" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-zs-Md9">
-                                <rect key="frame" x="219" y="157" width="121" height="305"/>
+                                <rect key="frame" x="155" y="157" width="154" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoe_Right" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-Rc-b41">
-                                <rect key="frame" x="442" y="157" width="121" height="305"/>
+                                <rect key="frame" x="459" y="157" width="154" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="259" y="790" width="250" height="50"/>
+                                <rect key="frame" x="170" y="732" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Verbinden met de schoenen"/>
+                                <state key="normal" title="Meten"/>
                                 <connections>
                                     <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="259" y="710" width="250" height="50"/>
+                                <rect key="frame" x="400" y="732" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Data Faker"/>
+                                <state key="normal" title="Demo"/>
                                 <connections>
                                     <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
                                 </connections>
@@ -248,16 +248,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-l0-50X">
-                                <rect key="frame" x="461" y="375" width="70" height="70"/>
+                                <rect key="frame" x="478" y="440" width="95" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="Wwb-W9-Fat">
-                                <rect key="frame" x="456" y="157" width="70" height="70"/>
+                                <rect key="frame" x="473" y="166" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="uEj-Wu-KUO">
+                                <rect key="frame" x="465" y="248" width="70" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -265,27 +274,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="uEj-Wu-KUO">
-                                <rect key="frame" x="453" y="240" width="50" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="f5H-lo-45i">
-                                <rect key="frame" x="504" y="240" width="50" height="70"/>
+                                <rect key="frame" x="538" y="248" width="70" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-TQ-KZ6">
-                                <rect key="frame" x="250" y="375" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="40"/>
@@ -293,30 +284,38 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-RW-4Va">
-                                <rect key="frame" x="282" y="230" width="50" height="70"/>
+                                <rect key="frame" x="228" y="244" width="70" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="AYQ-E0-esw">
-                                <rect key="frame" x="224" y="230" width="50" height="70"/>
+                                <rect key="frame" x="162" y="244" width="70" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="30"/>
+                                        <real key="value" value="40"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="epm-Do-iK4">
-                                <rect key="frame" x="251" y="157" width="70" height="70"/>
+                                <rect key="frame" x="198" y="166" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                                <color key="backgroundColor" red="1" green="0.098034215856481532" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="40"/>
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-TQ-KZ6">
+                                <rect key="frame" x="193" y="440" width="95" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>

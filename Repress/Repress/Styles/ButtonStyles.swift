@@ -31,7 +31,6 @@ class OrangeButton: UIButton {}
 
 class WhiteButton: UIButton {}
 
-
 extension UIButton {
     @objc dynamic override var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
