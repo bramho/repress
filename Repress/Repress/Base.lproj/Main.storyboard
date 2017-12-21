@@ -96,8 +96,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="setSelectedImage" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target"/>
+                    <tabBarItem key="tabBarItem" title="Gewicht" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxGewicht.png" id="cPa-gy-q4n" customClass="TabbarItem" customModule="Repress" customModuleProvider="target">
+                        <color key="badgeColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="leftShoePercentageLabel" destination="CiW-N3-7z9" id="6ua-ZR-pb8"/>
                         <outlet property="leftShoeWeightLabel" destination="E6L-vV-tDL" id="0QI-Y6-YqC"/>
@@ -131,7 +136,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VM9-BY-wOl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" selectedImage="balans.png" systemItem="mostViewed" id="EXw-F2-fh0">
+                    <tabBarItem key="tabBarItem" image="20pxBalans.png" landscapeImage="20pxBalans.png" largeContentSizeImage="20pxBalans.png" selectedImage="balans.png" id="EXw-F2-fh0">
                         <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                 </viewController>
@@ -308,6 +313,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="epm-Do-iK4">
                                 <rect key="frame" x="251" y="157" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <color key="backgroundColor" red="1" green="0.098034215856481532" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="40"/>
@@ -319,7 +325,6 @@
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Looppatroon" image="20pxLooppatroonIcon.png" landscapeImage="20pxLooppatroonIcon.png" largeContentSizeImage="20pxLooppatroonIcon.png" selectedImage="20pxLooppatroonIcon.png" id="NBx-MS-OgY">
-                        <color key="badgeColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -370,11 +375,12 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="1" green="0.3803921569" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                     </tabBar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
