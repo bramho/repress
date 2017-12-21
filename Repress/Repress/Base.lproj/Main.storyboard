@@ -172,7 +172,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-73-7pr" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="170" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Meten"/>
+                                <state key="normal" title="Start meten"/>
                                 <connections>
                                     <action selector="balanceButton:" destination="Kzo-D5-4PS" eventType="touchUpInside" id="Zi1-dI-rEz"/>
                                 </connections>
@@ -180,19 +180,19 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-d0-s6g" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="399" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Demo"/>
+                                <state key="normal" title="Start demo"/>
                                 <connections>
                                     <action selector="demoButton:" destination="Kzo-D5-4PS" eventType="touchUpInside" id="nbh-ab-iKW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ3-Vp-SYb" customClass="LargeBlueLabel" customModule="Repress" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ3-Vp-SYb" customClass="LargeBlueLabel" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="85" y="181" width="100" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
                                 <color key="textColor" red="0.27749431133270264" green="0.62673312425613403" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPb-Sr-DOC" customClass="LargeBlueLabel" customModule="Repress" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPb-Sr-DOC" customClass="LargeBlueLabel" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="584" y="181" width="100" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
@@ -205,6 +205,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Balans" image="20pxBalans.png" landscapeImage="20pxBalans.png" largeContentSizeImage="20pxBalans.png" selectedImage="20pxBalans.png" id="a57-tF-vbT"/>
                     <connections>
+                        <outlet property="balanceButton" destination="s8j-73-7pr" id="aQA-Zn-xaY"/>
+                        <outlet property="demoButton" destination="1bJ-d0-s6g" id="0c6-dB-5Qt"/>
                         <outlet property="leftShoeBar" destination="uMB-NN-A0u" id="t8M-I6-W9b"/>
                         <outlet property="leftShoeLabel" destination="WQ3-Vp-SYb" id="arb-5O-76B"/>
                         <outlet property="rightShoeBar" destination="gMf-Dt-XeB" id="pb0-qe-HPW"/>
