@@ -18,12 +18,17 @@ class ButtonStyles {
         
         let orangeButton = OrangeButton.appearance()
         orangeButton.setTitleColor(UIColor.white, for: .normal)
-        orangeButton.backgroundColor = repressOrange
+        orangeButton.setBackgroundImage(imageFromColor(repressOrange), for: .normal)
+        
+        orangeButton.setTitleColor(repressBlue, for: .disabled)
+        orangeButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
         
         let whiteButton = WhiteButton.appearance()
         whiteButton.setTitleColor(repressOrange, for: .normal)
         whiteButton.borderWidth = 1
         whiteButton.borderColor = repressOrange
+        
+        whiteButton.setTitleColor(UIColor.gray, for: .disabled)
         
         let roundButton = RoundButton.appearance()
         roundButton.setTitleColor(UIColor.white, for: .normal)
@@ -31,6 +36,9 @@ class ButtonStyles {
         roundButton.backgroundColor = repressOrange
         roundButton.borderColor = UIColor.white
         roundButton.cornerRadius = 30
+        
+        roundButton.setTitleColor(repressBlue, for: .disabled)
+        roundButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
     }
 }
 
@@ -39,6 +47,17 @@ class OrangeButton: UIButton {}
 class WhiteButton: UIButton {}
 
 class RoundButton: UIButton{}
+
+func imageFromColor(_ colour: UIColor) -> UIImage {
+    let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+    UIGraphicsBeginImageContext(rect.size)
+    let context = UIGraphicsGetCurrentContext()
+    context!.setFillColor(colour.cgColor)
+    context!.fill(rect)
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image!
+}
 
 extension UIButton {
     @objc dynamic override var cornerRadius: CGFloat {
