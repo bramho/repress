@@ -10,15 +10,22 @@ import UIKit
 
 class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate {
     
+    //Left Shoe
     @IBOutlet weak var leftShoeSensor4: UIImageView!
     @IBOutlet weak var leftShoeSensor3: UIImageView!
     @IBOutlet weak var leftShoeSensor2: UIImageView!
     @IBOutlet weak var leftShoeSensor1: UIImageView!
     
+    //Right Shoe
+    
     @IBOutlet weak var rightShoeSensor4: UIImageView!
     @IBOutlet weak var rightShoeSensor3: UIImageView!
     @IBOutlet weak var rightShoeSensor2: UIImageView!
     @IBOutlet weak var rightShoeSensor1: UIImageView!
+    
+    @IBAction func fakerActivationButton(_ sender: Any) {
+        patternFaker.scheduledTimerWithTimeInterval()
+    }
     
     @IBAction func tempActivationButton(_ sender: Any) {
         manager.startConnectionSession()
@@ -34,21 +41,14 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
     
     var sensorOutlets:[UIView] = []
     
-    //var newBackgroundColor: UIColor = (hue: 0.0, saturation: 0.5, brightness: 0.5, alpha: 0.5)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         manager = ShoeManager.init()
         manager.delegate = self
         StateManager.instance.delegate = self
         
-        
-        sensorOutlets = [leftShoeSensor1,leftShoeSensor2,leftShoeSensor3,leftShoeSensor4,rightShoeSensor1,rightShoeSensor2,rightShoeSensor3,rightShoeSensor4]
-        // Do any additional setup after loading the view, typically from a nib.
-        //patternFaker.scheduledTimerWithTimeInterval()
-        
-        //NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewShoeData(notification:)), name: Notification.Name("NewSensorData"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewShoeData(notification:)), name: Notification.Name("NewSensorData"), object: nil)
     }
     func stateUpdated(_ state: Int, _ error: String?) {
         print("State: " + String(state))
@@ -59,30 +59,22 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
         }
     }
     func sensorDataReceivedFromShoe(_ data: Shoe) {
-        if(data.getShoeType() == 1)  { // leftShoe
-            //print("leftshoedata")
-            //print(data.getShoe().getSensors())
+        if(data.getShoeType() == 1)  {
+            // leftShoe
             let leftShoeData = data.getShoe()
             print("leftShoeData" + String(describing: leftShoeData))
-            leftShoeSensor1.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor1()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            leftShoeSensor2.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor2()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            leftShoeSensor3.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor3()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            leftShoeSensor4.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor4()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
+            leftShoeSensor1.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor1()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            leftShoeSensor2.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor2()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            leftShoeSensor3.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor3()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            leftShoeSensor4.backgroundColor = UIColor(hue: CGFloat(((1 - leftShoeData.getSensor4()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
 
         } else if (data.getShoeType() == 2) {
+            //rightShoe
             let rightShoeData: Shoe = data.getShoe()
-            //print("rightshoedata")
-            //print(data.getShoe().getSensors())
-        
-            //print("sensor 1 Hue: " + String(describing: rightShoeSensor1.backgroundColor))
-            rightShoeSensor1.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor1()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            //rightShoeSensor1.alpha = CGFloat(Float(rightShoeData.getSensor1()))
-            rightShoeSensor2.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor2()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            //rightShoeSensor2.alpha = CGFloat(Float(rightShoeData.getSensor2()))
-            rightShoeSensor3.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor3()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            //rightShoeSensor3.alpha = CGFloat(Float(rightShoeData.getSensor3()))
-            rightShoeSensor4.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor4()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1.0)
-            //rightShoeSensor4.alpha = CGFloat(Float(rightShoeData.getSensor4()))
+            rightShoeSensor1.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor1()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            rightShoeSensor2.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor2()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            rightShoeSensor3.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor3()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
+            rightShoeSensor4.backgroundColor = UIColor(hue: CGFloat(((1 - rightShoeData.getSensor4()) / 6)), saturation: 1.0, brightness: 1.0, alpha: 0.8)
         }
         
     }
@@ -96,9 +88,20 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
         let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
         let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
         
-        //displayValuesOnScreen(leftShoe: Shoe, rightShoe: Shoe)
-        print("test")
+        displayValuesOnScreen(leftShoe: leftShoeData, rightShoe: rightShoeData)
         
+    }
+    
+    func displayValuesOnScreen(leftShoe: SensorValue, rightShoe: SensorValue){
+        leftShoeSensor4.backgroundColor = UIColor(hue: CGFloat((((1 - leftShoe.sensor1 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor1.backgroundColor = UIColor(hue: CGFloat((((1 - leftShoe.sensor2 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor3.backgroundColor = UIColor(hue: CGFloat((((1 - leftShoe.sensor3 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        leftShoeSensor2.backgroundColor = UIColor(hue: CGFloat((((1 - leftShoe.sensor4 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        
+        rightShoeSensor4.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor1 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor1.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor2 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor3.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor3 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
+        rightShoeSensor2.backgroundColor = UIColor(hue: CGFloat((((1 - rightShoe.sensor4 / 500)) / 6)), saturation: 1.0, brightness: 1.0, alpha: 1)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

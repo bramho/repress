@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ButtonStyles.applyButtonStyles()
         TabbarItemStyles.applyTabbarItemStyles()
         LabelStyles.applyLabelStyles()
+        //RoundImageView.applyImageStyles()
         
         return true
     }
