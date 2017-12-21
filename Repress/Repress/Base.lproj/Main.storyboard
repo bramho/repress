@@ -211,94 +211,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Links zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-zs-Md9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoe_Left" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-zs-Md9">
                                 <rect key="frame" x="219" y="157" width="121" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rechts zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-Rc-b41">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoe_Right" translatesAutoresizingMaskIntoConstraints="NO" id="Ei7-Rc-b41">
                                 <rect key="frame" x="442" y="157" width="121" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C0E-rA-09f" userLabel="Right Shoe Sensor 4">
-                                <rect key="frame" x="496" y="181" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTB-TT-cMI" userLabel="Right Shoe Sensor 3">
-                                <rect key="frame" x="474" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wcK-7G-9LA" userLabel="Right Shoe Sensor 2">
-                                <rect key="frame" x="547" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLX-Tj-L6I" userLabel="Right Shoe Sensor 1">
-                                <rect key="frame" x="496" y="465" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgw-0P-bn0" userLabel="Left Shoe Sensor 4">
-                                <rect key="frame" x="213" y="181" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Gm-mUZ" userLabel="Left Shoe Sensor 2">
-                                <rect key="frame" x="163" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sSh-mh-pwc" userLabel="Left Shoe Sensor 1">
-                                <rect key="frame" x="213" y="465" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wq5-Ml-9IX" userLabel="Left Shoe Sensor 3">
-                                <rect key="frame" x="235" y="266" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-m1-jnI">
-                                <rect key="frame" x="226" y="240" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="259" y="790" width="250" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Verbinden met de schoenen"/>
+                                <connections>
+                                    <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="259" y="710" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Data Faker"/>
                                 <connections>
                                     <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bBI-L7-YEC">
-                                <rect key="frame" x="259" y="382" width="56" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="28"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7O-94-SXS">
-                                <rect key="frame" x="281" y="240" width="51" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LEK-uw-LCk">
-                                <rect key="frame" x="259" y="159" width="59" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="29"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looppatroon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAg-Ax-acG" customClass="TitleLabel" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="20" y="61" width="728" height="43"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -306,14 +242,78 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="259" y="790" width="250" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="n9w-l0-50X">
+                                <rect key="frame" x="461" y="375" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="Wwb-W9-Fat">
+                                <rect key="frame" x="456" y="157" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="uEj-Wu-KUO">
+                                <rect key="frame" x="453" y="240" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="f5H-lo-45i">
+                                <rect key="frame" x="504" y="240" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="pkR-TQ-KZ6">
+                                <rect key="frame" x="250" y="375" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="wO7-RW-4Va">
+                                <rect key="frame" x="282" y="230" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="AYQ-E0-esw">
+                                <rect key="frame" x="224" y="230" width="50" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DrukSensor" translatesAutoresizingMaskIntoConstraints="NO" id="epm-Do-iK4">
+                                <rect key="frame" x="251" y="157" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
@@ -327,19 +327,19 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
-                        <outlet property="leftShoeSensorView1" destination="U7O-94-SXS" id="s6q-MO-SJY"/>
-                        <outlet property="leftShoeSensorView2" destination="LEK-uw-LCk" id="DQ2-C9-I7S"/>
-                        <outlet property="leftShoeSensorView3" destination="W4C-m1-jnI" id="QYd-lm-FZa"/>
-                        <outlet property="leftShoeSensorView4" destination="bBI-L7-YEC" id="5ti-wr-xeY"/>
-                        <outlet property="rightShoeSensor1" destination="zTB-TT-cMI" id="vYH-ZH-Up7"/>
-                        <outlet property="rightShoeSensor2" destination="C0E-rA-09f" id="Fbe-Up-EZM"/>
-                        <outlet property="rightShoeSensor3" destination="wcK-7G-9LA" id="opW-Rf-QBc"/>
-                        <outlet property="rightShoeSensor4" destination="LLX-Tj-L6I" id="5Ly-bJ-i90"/>
+                        <outlet property="leftShoeSensor1" destination="wO7-RW-4Va" id="dbz-T4-Zqg"/>
+                        <outlet property="leftShoeSensor2" destination="epm-Do-iK4" id="Xg6-hB-J5k"/>
+                        <outlet property="leftShoeSensor3" destination="AYQ-E0-esw" id="3GF-yd-rQa"/>
+                        <outlet property="leftShoeSensor4" destination="pkR-TQ-KZ6" id="2JY-hy-NWC"/>
+                        <outlet property="rightShoeSensor1" destination="uEj-Wu-KUO" id="uWI-bh-tAb"/>
+                        <outlet property="rightShoeSensor2" destination="Wwb-W9-Fat" id="hRw-Jr-GP7"/>
+                        <outlet property="rightShoeSensor3" destination="f5H-lo-45i" id="2hY-La-93J"/>
+                        <outlet property="rightShoeSensor4" destination="n9w-l0-50X" id="sTW-a0-T0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImZ-kR-KqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="890" y="-1208"/>
+            <point key="canvasLocation" x="889.84375" y="-1208.203125"/>
         </scene>
         <!--Launch Screen View Controller-->
         <scene sceneID="6Cr-Jz-6cn">
@@ -392,8 +392,11 @@
         <image name="20pxBalans.png" width="50" height="51"/>
         <image name="20pxGewicht.png" width="50" height="51"/>
         <image name="20pxLooppatroonIcon.png" width="50" height="51"/>
+        <image name="DrukSensor" width="210" height="209"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
+        <image name="Shoe_Left" width="510" height="1273"/>
+        <image name="Shoe_Right" width="510" height="1271"/>
         <image name="balans.png" width="50" height="50"/>
     </resources>
 </document>
