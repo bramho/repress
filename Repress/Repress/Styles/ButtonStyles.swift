@@ -24,12 +24,21 @@ class ButtonStyles {
         whiteButton.setTitleColor(repressOrange, for: .normal)
         whiteButton.borderWidth = 1
         whiteButton.borderColor = repressOrange
+        
+        let roundButton = RoundButton.appearance()
+        roundButton.setTitleColor(UIColor.white, for: .normal)
+        roundButton.borderWidth = 4
+        roundButton.backgroundColor = repressOrange
+        roundButton.borderColor = UIColor.white
+        roundButton.cornerRadius = 30
     }
 }
 
 class OrangeButton: UIButton {}
 
 class WhiteButton: UIButton {}
+
+class RoundButton: UIButton{}
 
 extension UIButton {
     @objc dynamic override var cornerRadius: CGFloat {
