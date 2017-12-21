@@ -20,6 +20,8 @@ class GameViewController: UIViewController {
     
     var i = 0
     
+    var skView : SKView!
+    
 //    func stateUpdated(_ state: Int, _ error: String?) {
 //        print("State: " + String(state))
 //        print(error as Any)
@@ -45,8 +47,12 @@ class GameViewController: UIViewController {
 //        }
 //    }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(self.AlertMessage(notification:)), name: Notification.Name("AlertMessage"), object: nil)
         
 //        manager = ShoeManager.init()
 //        manager.delegate = self
@@ -55,7 +61,7 @@ class GameViewController: UIViewController {
         if let scene = GameScene(fileNamed:"GameScene") {
             // Configure the view.
             self.view = SKView()
-            let skView = self.view as! SKView
+            skView = self.view as! SKView
             skView.showsFPS = true
             skView.showsNodeCount = true
             
@@ -70,6 +76,19 @@ class GameViewController: UIViewController {
             
         }
 
+    }
+    
+    @objc func AlertMessage(notification: NSNotification) {
+                if self.viewIfLoaded?.window != nil {
+        let alertInfo = notification.userInfo
+        let message = alertInfo!["message"]
+        let title = alertInfo!["title"]
+        let buttonText = alertInfo!["buttonText"]
+        
+        let alert = UIAlertController(title: (title as! String), message: (message as! String), preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: (buttonText as! String), style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBAction func tempActivationButton(_ sender: Any) {
