@@ -16,20 +16,48 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     @IBOutlet weak var rightShoeLabel: UILabel!
     
     var manager : ShoeManager!
+    var currentState: Int!
+    
     var balanceFaker = BalanceFaker()
+    var balanceFakerIsRunning: Bool = false
     
     var leftShoe: Shoe!
     var rightShoe: Shoe!
     
+    @IBOutlet weak var balanceButton: OrangeButton!
+    
     @IBAction func balanceButton(_ sender: Any) {
-        // Start shoe connection
-        manager.startConnectionSession()
+        if (!balanceFakerIsRunning) {
+            if (currentState == StateManager.States.activating.rawValue) {
+                manager.stopConnectionSession()
+                balanceButton.setTitle("Start meten", for: .normal)
+            } else if (currentState == StateManager.States.connected.rawValue || currentState == StateManager.States.stopped.rawValue || currentState == StateManager.States.completed.rawValue) {
+                // Start shoe connection
+                manager.startConnectionSession()
+                balanceButton.setTitle("Stop met verbinden", for: .normal)
+            } else if (currentState == StateManager.States.activated.rawValue) {
+                balanceButton.setTitle("Start meten", for: .normal)
+            }
+        }
     }
     
-    @IBAction func demoButton(_ sender: Any) {
-        // Start balance faker
-        balanceFaker.scheduledTimerWithTimeInterval()
-
+    @IBOutlet weak var demoButton: WhiteButton!
+    
+    @IBAction func demoButton(_ sender: Any) {        
+        if (currentState != StateManager.States.activating.rawValue && currentState != StateManager.States.activated.rawValue && currentState != StateManager.States.initialized.rawValue && currentState != StateManager.States.verified.rawValue) && currentState != StateManager.States.starting.rawValue {
+            if (balanceFakerIsRunning) {
+                // Stop interval
+                balanceFakerIsRunning = false
+                balanceFaker.clearTimer()
+                resetBalanceScreen()
+                demoButton.setTitle("Start demo", for: .normal)
+            } else {
+                // Start balance faker
+                balanceFakerIsRunning = true
+                balanceFaker.scheduledTimerWithTimeInterval()
+                demoButton.setTitle("Stop demo", for: .normal)
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -45,9 +73,16 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     
     func stateUpdated(_ state: Int, _ error: String?) {
         print("State: " + String(state))
-        print(error!)
+        currentState = state
+        print(error)
+        
+        if (state == StateManager.States.connected.rawValue) {
+            balanceButton.setTitle("Start meten", for: .normal)
+            resetBalanceScreen()
+        }
         
         if (state == StateManager.States.activated.rawValue) {
+            balanceButton.setTitle("Stop meten", for: .normal)
             manager.stopConnectionSession()
         }
     }
@@ -69,8 +104,11 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     }
     
     @objc func gotNewBalanceData(notification: Notification) {
-        let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
-        let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
+//        let leftShoeData: SensorValue = notification.userInfo?["left_shoe"] as! SensorValue
+//        let rightShoeData: SensorValue = notification.userInfo?["right_shoe"] as! SensorValue
+        
+        leftShoe = notification.userInfo?["left_shoe"] as! Shoe
+        rightShoe = notification.userInfo?["right_shoe"] as! Shoe
         
         displayBalanceOnScreen()
     }
@@ -94,6 +132,13 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
             leftShoeBar.frame = CGRect(x: 85, y: (700 - leftShoeBarHeight), width: 100, height: leftShoeBarHeight)
             rightShoeBar.frame = CGRect(x: 548, y: (700 - rightShoeBarHeight), width: 100, height: rightShoeBarHeight)
         }
+    }
+    
+    func resetBalanceScreen() {
+        leftShoeBar.frame = CGRect(x: 85, y: 700, width: 100, height: 0)
+        rightShoeBar.frame = CGRect(x: 548, y: 700, width: 100, height: 0)
+        leftShoeLabel.text = "0%"
+        rightShoeLabel.text = "0%"
     }
 
     override func didReceiveMemoryWarning() {

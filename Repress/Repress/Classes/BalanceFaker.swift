@@ -15,20 +15,26 @@ class BalanceFaker {
     var liftRightFoot = LiftFoot.init()
     
     var repeats = true
+    
     // Starts interval
     func scheduledTimerWithTimeInterval () {
         timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.generateShoeValues), userInfo: nil, repeats: true)
     }
     
+    func clearTimer () {
+        timer.invalidate()
+        liftLeftFoot = LiftFoot.init()
+        liftRightFoot = LiftFoot.init()
+    }
+    
     @objc func generateShoeValues () {
         if repeats {
-            let leftShoeValues = SensorValue(sensor1: getSensorValue(type: "LeftFoot"), sensor2: getSensorValue(type: "LeftFoot"), sensor3: getSensorValue(type: "LeftFoot"), sensor4: getSensorValue(type: "LeftFoot"))
+            let leftShoeValues = Shoe(shoeType: 1, sensor1: getSensorValue(type: "LeftFoot"), sensor2: getSensorValue(type: "LeftFoot"), sensor3: getSensorValue(type: "LeftFoot"), sensor4: getSensorValue(type: "LeftFoot"))
             
-            let rightShoeValues = SensorValue(sensor1: getSensorValue(type: "RightFoot"), sensor2: getSensorValue(type: "RightFoot"), sensor3: getSensorValue(type: "RightFoot"), sensor4: getSensorValue(type: "RightFoot"))
+            let rightShoeValues = Shoe(shoeType: 2, sensor1: getSensorValue(type: "RightFoot"), sensor2: getSensorValue(type: "RightFoot"), sensor3: getSensorValue(type: "RightFoot"), sensor4: getSensorValue(type: "RightFoot"))
             
-            let sensorValues: [String: SensorValue] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
+            let sensorValues: [String: Shoe] = ["left_shoe": leftShoeValues, "right_shoe": rightShoeValues]
             
-            //print (sensorValues)
             // Posts sensor data to NotificationCenter
             NotificationCenter.default.post(name: Notification.Name("NewShoeData"), object: nil, userInfo: sensorValues)
             
@@ -74,7 +80,7 @@ class BalanceFaker {
     }
     
     // Gets a normalized value for a sensor
-    func getSensorValue (type: String) -> Float {
+    func getSensorValue (type: String) -> Int {
         
         var randomInt: Int = 0
         
@@ -82,9 +88,9 @@ class BalanceFaker {
             randomInt = Int.random(range: getValue(lowestValue: liftLeftFoot.lowestValue, highestValue: liftLeftFoot.highestValue)...liftLeftFoot.highestValue)
         } else if (type == "RightFoot") {
             randomInt = Int.random(range: getValue(lowestValue: liftRightFoot.lowestValue, highestValue: liftRightFoot.highestValue)...liftRightFoot.highestValue)
-            //print ("randomInt: " + String(randomInt))
         }
         
-        return ShoeDataNormalizer().normalizePressureValue(pressureValue: Float(randomInt))
+//        return ShoeDataNormalizer().normalizePressureValue(pressureValue: Float(randomInt))
+        return randomInt
     }
 }
