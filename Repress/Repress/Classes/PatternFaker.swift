@@ -31,6 +31,12 @@ class PatternFaker{
         timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(self.generateShoeValues), userInfo: nil, repeats: true)
     }
     
+    func clearTimer (){
+        timer.invalidate()
+        liftLeftFoot = LiftFoot.init()
+        liftRightFoot = LiftFoot.init()
+    }
+    
     @objc func generateShoeValues () {
         if repeats{
             let leftShoeValues = SensorValue(sensor1: Float(leftFootSensors[0]), sensor2: Float(leftFootSensors[1]), sensor3: Float(leftFootSensors[2]), sensor4: Float(leftFootSensors[3]))

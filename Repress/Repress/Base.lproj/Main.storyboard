@@ -233,20 +233,20 @@
                                 <rect key="frame" x="459" y="157" width="154" height="393"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="170" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Meten"/>
+                                <state key="normal" title="Start meten"/>
                                 <connections>
-                                    <action selector="tempActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
+                                    <action selector="looppatroonButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="400" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <state key="normal" title="Demo"/>
+                                <state key="normal" title="Start demo"/>
                                 <connections>
-                                    <action selector="fakerActivationButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
+                                    <action selector="demoButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="KcL-UC-Klq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Looppatroon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAg-Ax-acG" customClass="TitleLabel" customModule="Repress" customModuleProvider="target">
@@ -328,7 +328,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSf-49-P2a" customClass="RoundButton" customModule="Repress" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSf-49-P2a" customClass="RoundButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="369" y="654" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Rec."/>
@@ -345,10 +345,12 @@
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
+                        <outlet property="demoButton" destination="KwX-UZ-KWF" id="GOU-md-KhD"/>
                         <outlet property="leftShoeSensor1" destination="wO7-RW-4Va" id="dbz-T4-Zqg"/>
                         <outlet property="leftShoeSensor2" destination="epm-Do-iK4" id="Xg6-hB-J5k"/>
                         <outlet property="leftShoeSensor3" destination="AYQ-E0-esw" id="3GF-yd-rQa"/>
                         <outlet property="leftShoeSensor4" destination="pkR-TQ-KZ6" id="2JY-hy-NWC"/>
+                        <outlet property="looppatroonButton" destination="UlE-9X-tOg" id="dXn-bq-TL5"/>
                         <outlet property="rightShoeSensor1" destination="uEj-Wu-KUO" id="uWI-bh-tAb"/>
                         <outlet property="rightShoeSensor2" destination="Wwb-W9-Fat" id="hRw-Jr-GP7"/>
                         <outlet property="rightShoeSensor3" destination="f5H-lo-45i" id="2hY-La-93J"/>
