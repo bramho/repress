@@ -21,8 +21,15 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     var leftShoe: Shoe!
     var rightShoe: Shoe!
     
-    @IBAction func tempStartButton(_ sender: Any) {
+    @IBAction func balanceButton(_ sender: Any) {
+        // Start shoe connection
         manager.startConnectionSession()
+    }
+    
+    @IBAction func demoButton(_ sender: Any) {
+        // Start balance faker
+        balanceFaker.scheduledTimerWithTimeInterval()
+
     }
     
     override func viewDidLoad() {
@@ -32,16 +39,13 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         manager.delegate = self
         StateManager.instance.delegate = self
         
-        // Start interval
-        //balanceFaker.scheduledTimerWithTimeInterval()
-        
         // Listen for new balance data
         NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewBalanceData(notification:)), name: Notification.Name("NewShoeData"), object: nil)
     }
     
     func stateUpdated(_ state: Int, _ error: String?) {
         print("State: " + String(state))
-        print(error)
+        print(error!)
         
         if (state == StateManager.States.activated.rawValue) {
             manager.stopConnectionSession()
@@ -49,7 +53,7 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     }
     
     func sensorDataReceivedFromShoe(_ data: Shoe) {
-        if(data.getShoeType() == 1)  { // leftShoe
+        if(data.getShoeType() == 1)  {
             print("leftshoedata")
             print(data.getShoe().getSensors())
             self.leftShoe = data.getShoe()
@@ -77,17 +81,19 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         let rightShoeTotal = rightShoe.getSensor1() + rightShoe.getSensor2() + rightShoe.getSensor3() + rightShoe.getSensor4()
         let overallTotal = leftShoeTotal + rightShoeTotal
         
-        let leftShoePercentage = Int((leftShoeTotal / overallTotal) * 100)
-        let rightShoePercentage = Int((rightShoeTotal / overallTotal) * 100)
-        
-        leftShoeLabel.text = String(leftShoePercentage) + "%"
-        rightShoeLabel.text = String(rightShoePercentage) + "%"
-        
-        let leftShoeBarHeight = Int(300 * (leftShoeTotal / overallTotal))
-        let rightShoeBarHeight = Int(300 * (rightShoeTotal / overallTotal))
-        
-        leftShoeBar.frame = CGRect(x: 16, y: (557 - leftShoeBarHeight), width: 100, height: leftShoeBarHeight)
-        rightShoeBar.frame = CGRect(x: 259, y: (557 - rightShoeBarHeight), width: 100, height: rightShoeBarHeight)
+        if (leftShoeTotal != 0.0 && rightShoeTotal != 0.0) {
+            let leftShoePercentage = Int((leftShoeTotal / overallTotal) * 100)
+            let rightShoePercentage = Int((rightShoeTotal / overallTotal) * 100)
+            
+            leftShoeLabel.text = String(leftShoePercentage) + "%"
+            rightShoeLabel.text = String(rightShoePercentage) + "%"
+            
+            let leftShoeBarHeight = Int(300 * (leftShoeTotal / overallTotal))
+            let rightShoeBarHeight = Int(300 * (rightShoeTotal / overallTotal))
+            
+            leftShoeBar.frame = CGRect(x: 85, y: (700 - leftShoeBarHeight), width: 100, height: leftShoeBarHeight)
+            rightShoeBar.frame = CGRect(x: 548, y: (700 - rightShoeBarHeight), width: 100, height: rightShoeBarHeight)
+        }
     }
 
     override func didReceiveMemoryWarning() {
