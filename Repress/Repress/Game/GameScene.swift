@@ -16,6 +16,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // var endNode = SKSpriteNode()
     
     var level = 1
+    var canMove = true
     
     override func didMove(to view: SKView) {
         self.physicsWorld.contactDelegate = self
@@ -28,8 +29,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         manager.accelerometerUpdateInterval = 0.1
         manager.startAccelerometerUpdates(to: OperationQueue.main) {
             (data, error) in
+        if(self.canMove){
+                self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
+        } else {
+                self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        }
             
-            self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
+            //self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
         }
     }
     
@@ -43,6 +49,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             NotificationCenter.default.post(name: Notification.Name("AlertMessage"), object: nil, userInfo: alertInfo)
             //NotificationCenter.default.post(name: Notification.Name("Reset"), object: nil, userInfo: nil)
             clear()
+            self.canMove = false
             start()
             // level ++
         }
@@ -52,6 +59,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             NotificationCenter.default.post(name: Notification.Name("AlertMessage"), object: nil, userInfo: alertInfo)
             //NotificationCenter.default.post(name: Notification.Name("Reset"), object: nil, userInfo: nil)
             clear()
+            self.canMove = false
             start()
         }
     }
