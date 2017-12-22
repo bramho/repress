@@ -18,10 +18,8 @@ class ButtonStyles {
         
         let orangeButton = OrangeButton.appearance()
         orangeButton.setTitleColor(UIColor.white, for: .normal)
-        orangeButton.setBackgroundImage(imageFromColor(repressOrange), for: .normal)
-        
-        //orangeButton.setTitleColor(repressBlue, for: .disabled)
-        //orangeButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
+//        orangeButton.setBackgroundImage(imageFromColor(repressOrange), for: .normal)
+        orangeButton.backgroundColor = repressOrange
         
         let whiteButton = WhiteButton.appearance()
         whiteButton.setTitleColor(repressOrange, for: .normal)
@@ -37,8 +35,8 @@ class ButtonStyles {
         roundButton.borderColor = UIColor.white
         roundButton.cornerRadius = 30
         
-        roundButton.setTitleColor(repressBlue, for: .disabled)
-        roundButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
+//        roundButton.setTitleColor(repressBlue, for: .disabled)
+//        roundButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
     }
 }
 
@@ -48,6 +46,8 @@ class WhiteButton: UIButton {}
 
 class RoundButton: UIButton{}
 
+// WARNING: Breaks corner radius, no fix yet
+// Needs to be used to set background color for buttons with states
 func imageFromColor(_ colour: UIColor) -> UIImage {
     let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
     UIGraphicsBeginImageContext(rect.size)

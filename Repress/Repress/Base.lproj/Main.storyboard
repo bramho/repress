@@ -84,6 +84,11 @@
                                 <rect key="frame" x="170" y="849" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Meten"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-zr-5dl" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
                                 <rect key="frame" x="400" y="849" width="200" height="50"/>
@@ -171,6 +176,11 @@
                                 <rect key="frame" x="170" y="849" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start meten"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="balanceButton:" destination="Kzo-D5-4PS" eventType="touchUpInside" id="Zi1-dI-rEz"/>
                                 </connections>
@@ -197,6 +207,17 @@
                                 <color key="textColor" red="0.27749431133270264" green="0.62673312425613403" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="7El-1C-rsR">
+                                <rect key="frame" x="374" y="566" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHJ-Xj-ADu" customClass="SmallBlueLabel" customModule="Repress" customModuleProvider="target">
+                                <rect key="frame" x="20" y="624" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vAK-dS-wS9"/>
@@ -209,13 +230,15 @@
                         <outlet property="demoButton" destination="1bJ-d0-s6g" id="0c6-dB-5Qt"/>
                         <outlet property="leftShoeBar" destination="uMB-NN-A0u" id="t8M-I6-W9b"/>
                         <outlet property="leftShoeLabel" destination="WQ3-Vp-SYb" id="arb-5O-76B"/>
+                        <outlet property="loadingActivityIndicator" destination="7El-1C-rsR" id="I7w-Tm-vP1"/>
+                        <outlet property="loadingLabel" destination="JHJ-Xj-ADu" id="jPa-ra-lh2"/>
                         <outlet property="rightShoeBar" destination="gMf-Dt-XeB" id="pb0-qe-HPW"/>
                         <outlet property="rightShoeLabel" destination="sPb-Sr-DOC" id="8rd-fo-Qmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Uw-Je-rXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912.79999999999995" y="1110.4947526236883"/>
+            <point key="canvasLocation" x="912.5" y="1110.3515625"/>
         </scene>
         <!--Looppatroon-->
         <scene sceneID="pMc-u1-H78">
@@ -237,6 +260,11 @@
                                 <rect key="frame" x="170" y="849" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start meten"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="looppatroonButton:" destination="Avf-ag-YEA" eventType="touchUpInside" id="9qL-3i-evS"/>
                                 </connections>

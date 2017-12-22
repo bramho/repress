@@ -15,6 +15,9 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
     @IBOutlet weak var leftShoeLabel: UILabel!
     @IBOutlet weak var rightShoeLabel: UILabel!
     
+    @IBOutlet weak var loadingActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var loadingLabel: SmallBlueLabel!
+    
     var manager : ShoeManager!
     var currentState: Int!
     
@@ -66,6 +69,8 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         manager = ShoeManager.init()
         manager.delegate = self
         StateManager.instance.delegate = self
+
+        loadingActivityIndicator.hidesWhenStopped = true
         
         // Listen for new balance data
         NotificationCenter.default.addObserver(self, selector: #selector(self.gotNewBalanceData(notification:)), name: Notification.Name("NewShoeData"), object: nil)
@@ -76,6 +81,11 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         currentState = state
         print(error)
         
+        if (state == StateManager.States.starting.rawValue) {
+            loadingActivityIndicator.startAnimating()
+            loadingLabel.text = "Aan het verbinden met de schoenen..."
+        }
+        
         if (state == StateManager.States.connected.rawValue) {
             balanceButton.setTitle("Start meten", for: .normal)
             resetBalanceScreen()
@@ -84,6 +94,11 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
         if (state == StateManager.States.activated.rawValue) {
             balanceButton.setTitle("Stop meten", for: .normal)
             manager.stopConnectionSession()
+        }
+        
+        if (state == StateManager.States.completed.rawValue || state == StateManager.States.activated.rawValue || state == StateManager.States.disconnected.rawValue || state == StateManager.States.stopped.rawValue) {
+            loadingActivityIndicator.stopAnimating()
+            loadingLabel.text = ""
         }
     }
     
