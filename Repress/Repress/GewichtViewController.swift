@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class GewichtViewController: UIViewController {
+class GewichtViewController: UIViewController, BWWalkthroughViewControllerDelegate {
     let weightFaker = WeightFaker.init()
     
     @IBOutlet weak var weightLabel: LargeBlueLabel!
@@ -36,6 +36,17 @@ class GewichtViewController: UIViewController {
         self.rightShoePercentageLabel.text = String(Int((rightShoeWeight / weight) * 100)) + "%"
     }
     
+    @IBAction func showWalkthroughButtonPressed(_ sender: Any) {
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let walkthrough = stb.instantiateViewController(withIdentifier: "Main") as! BWWalkthroughViewController
+        let page_zero = stb.instantiateViewController(withIdentifier: "gewichtwalk0")
+        
+        walkthrough.delegate = self
+        walkthrough.add(viewController:page_zero)
+        //walkthrough.add(viewController:page_one)
+        //walkthrough.add(viewController:page_two)
+        //walkthrough.add(viewController:page_three)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

@@ -5,10 +5,10 @@
 //  Created by Geart on 11/12/2017.
 //  Copyright © 2017 geartotten. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
-class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate {
+class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate, BWWalkthroughViewControllerDelegate {
     
     //Left Shoe
     @IBOutlet weak var leftShoeSensor4: UIImageView!
@@ -59,6 +59,9 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
             }
         }
     }
+    func walkthroughCloseButtonPressed() {
+        self.dismiss(animated: true, completion: nil)
+    }
     var patternFaker = PatternFaker()
     var manager : ShoeManager!
     
@@ -69,6 +72,24 @@ class LooppatroonViewController: UIViewController, ShoeManagerDelegate, StateMan
     var rightShoe: Shoe!
     
     var sensorOutlets:[UIView] = []
+    
+    @IBAction func showWalkthroughButtonPressed(_ sender: Any) {
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let walkthrough = stb.instantiateViewController(withIdentifier: "Main") as! BWWalkthroughViewController
+        let page_zero = stb.instantiateViewController(withIdentifier: "looppatroonwalk0")
+        let page_one = stb.instantiateViewController(withIdentifier: "looppatroonwalk1")
+        let page_two = stb.instantiateViewController(withIdentifier: "looppatroonwalk2")
+        //let page_three = stb.instantiateViewController(withIdentifier: "walk3")
+        
+        walkthrough.delegate = self
+        walkthrough.add(viewController:page_zero)
+        walkthrough.add(viewController:page_one)
+        walkthrough.add(viewController:page_two)
+        //walkthrough.add(viewController:page_three)
+        
+        
+        self.present(walkthrough, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
