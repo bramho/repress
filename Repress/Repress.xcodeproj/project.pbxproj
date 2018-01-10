@@ -18,6 +18,7 @@
 		257B50C21FE93FA800CF3D7E /* 20pxBalans.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50C11FE93FA800CF3D7E /* 20pxBalans.png */; };
 		257B50C41FE93FAF00CF3D7E /* 20pxGewicht.png in Resources */ = {isa = PBXBuildFile; fileRef = 257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */; };
 		257B50C61FE9470100CF3D7E /* LabelStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B50C51FE9470100CF3D7E /* LabelStyles.swift */; };
+		259133F51FED197C00253930 /* 20pxgame-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 259133F41FED197C00253930 /* 20pxgame-08.png */; };
 		25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */; };
 		25A0EE5A1FE7FC000045E45E /* SwiftyGifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */; };
 		25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */; };
@@ -65,6 +66,7 @@
 		257B50C11FE93FA800CF3D7E /* 20pxBalans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20pxBalans.png; sourceTree = "<group>"; };
 		257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 20pxGewicht.png; sourceTree = "<group>"; };
 		257B50C51FE9470100CF3D7E /* LabelStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyles.swift; sourceTree = "<group>"; };
+		259133F41FED197C00253930 /* 20pxgame-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20pxgame-08.png"; sourceTree = "<group>"; };
 		25A0EE561FE7FBBA0045E45E /* Loading-animatie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Loading-animatie.gif"; sourceTree = "<group>"; };
 		25A0EE591FE7FC000045E45E /* SwiftyGifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGifManager.swift; sourceTree = "<group>"; };
 		25A0EE5B1FE7FC130045E45E /* UIImage+SwiftyGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SwiftyGif.swift"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		257B50BC1FE93CDB00CF3D7E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				259133F41FED197C00253930 /* 20pxgame-08.png */,
 				257B50BF1FE93E5A00CF3D7E /* 20pxLooppatroonIcon.png */,
 				257B50C11FE93FA800CF3D7E /* 20pxBalans.png */,
 				257B50C31FE93FAF00CF3D7E /* 20pxGewicht.png */,
@@ -306,6 +309,7 @@
 			files = (
 				E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */,
 				257B50C41FE93FAF00CF3D7E /* 20pxGewicht.png in Resources */,
+				259133F51FED197C00253930 /* 20pxgame-08.png in Resources */,
 				E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */,
 				25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */,
 				E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */,

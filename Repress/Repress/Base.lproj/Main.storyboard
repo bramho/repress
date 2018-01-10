@@ -152,7 +152,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VM9-BY-wOl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Game" image="20pxGewicht.png" landscapeImage="20pxGewicht.png" largeContentSizeImage="20pxGewicht.png" selectedImage="20pxBalans.png" id="EXw-F2-fh0"/>
+                    <tabBarItem key="tabBarItem" title="Game" image="20pxgame-08.png" landscapeImage="20pxgame-08.png" largeContentSizeImage="20pxgame-08.png" selectedImage="20pxgame-08.png" id="EXw-F2-fh0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ZE-C4-Xne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -905,6 +905,7 @@ Laat uw cliënt de in de tussentijd schoenen aantrekken.
         <image name="20pxBalans.png" width="50" height="51"/>
         <image name="20pxGewicht.png" width="50" height="51"/>
         <image name="20pxLooppatroonIcon.png" width="50" height="51"/>
+        <image name="20pxgame-08.png" width="22" height="21"/>
         <image name="DrukSensor" width="210" height="209"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
