@@ -29,13 +29,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         manager.accelerometerUpdateInterval = 0.1
         manager.startAccelerometerUpdates(to: OperationQueue.main) {
             (data, error) in
-        if(self.canMove){
-                self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
-        } else {
-                self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
-        }
             
-            //self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
+            if(self.canMove){
+                    self.physicsWorld.gravity = CGVector(dx: CGFloat((data?.acceleration.x)! * 10), dy: CGFloat((data?.acceleration.y)! * 10))
+            } else {
+                    self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+            }
         }
     }
     
@@ -47,7 +46,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if(bodyA.categoryBitMask == 1 && bodyB.categoryBitMask == 2 || bodyA.categoryBitMask == 2 && bodyB.categoryBitMask == 1) {
             let alertInfo = ["message": "Congratulations", "title": "YOU WON", "buttonText": "Next level"]
             NotificationCenter.default.post(name: Notification.Name("AlertMessage"), object: nil, userInfo: alertInfo)
-            //NotificationCenter.default.post(name: Notification.Name("Reset"), object: nil, userInfo: nil)
             clear()
             self.canMove = false
             start()
@@ -57,7 +55,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if(bodyA.categoryBitMask == 1 && bodyB.categoryBitMask == 3 || bodyA.categoryBitMask == 3 && bodyB.categoryBitMask == 1) {
             let alertInfo = ["message": "Try again", "title": "YOU LOST", "buttonText": "Start"]
             NotificationCenter.default.post(name: Notification.Name("AlertMessage"), object: nil, userInfo: alertInfo)
-            //NotificationCenter.default.post(name: Notification.Name("Reset"), object: nil, userInfo: nil)
             clear()
             self.canMove = false
             start()
@@ -71,6 +68,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
     func start() {
+        //canMove = true
         if (level == 1) {
             let orange = UIColor(red:1.00, green:0.38, blue:0.00, alpha:1.0)
             let player = GameObject().createObject(imageName: "Bal_01", position: CGPoint(x: -440, y: 585), color: SKColor.red, size: CGSize(width: 50, height: 50), body: SKPhysicsBody(circleOfRadius: 25), gravity: true, dynamic: true, catMask: 1, fieldMask: 1, colMask: 2, conMask: 2)

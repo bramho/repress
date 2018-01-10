@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate {
+class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerDelegate, BWWalkthroughViewControllerDelegate {
     @IBOutlet weak var leftShoeBar: UIView!
     @IBOutlet weak var rightShoeBar: UIView!
     
@@ -61,6 +61,23 @@ class BalansViewController: UIViewController, ShoeManagerDelegate, StateManagerD
                 demoButton.setTitle("Stop demo", for: .normal)
             }
         }
+    }
+    @IBAction func showWalkthroughButtonPressed(_ sender: Any) {
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let walkthrough = stb.instantiateViewController(withIdentifier: "Main") as! BWWalkthroughViewController
+        let page_zero = stb.instantiateViewController(withIdentifier: "balanswalk0")
+        let page_one = stb.instantiateViewController(withIdentifier: "balanswalk1")
+        
+        walkthrough.delegate = self
+        walkthrough.add(viewController:page_zero)
+        walkthrough.add(viewController:page_one)
+        //walkthrough.add(viewController:page_two)
+        //walkthrough.add(viewController:page_three)
+        
+        self.present(walkthrough, animated: true, completion: nil)
+    }
+    func walkthroughCloseButtonPressed() {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

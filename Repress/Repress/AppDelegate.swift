@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TabbarItemStyles.applyTabbarItemStyles()
         LabelStyles.applyLabelStyles()
         ShadowUIView.applyShadows()
-        //RoundImageView.applyImageStyles()
+        RoundUIView.applyUIViewStyles()
         
         return true
     }

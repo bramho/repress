@@ -39,13 +39,13 @@
 		E22CEEC41FDEB20A00362640 /* LooppatroonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */; };
 		E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC51FDED0C300362640 /* PatternFaker.swift */; };
 		E2423CDA2004D62A00ADA4DF /* ShadowUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2423CD92004D62A00ADA4DF /* ShadowUIView.swift */; };
+		E2423D02200630EE00ADA4DF /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2423D01200630EE00ADA4DF /* RoundUIView.swift */; };
 		E2530CF72004B6A70095CF79 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2530CF52004B6A60095CF79 /* BWWalkthroughPageViewController.swift */; };
 		E2530CF82004B6A70095CF79 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2530CF62004B6A60095CF79 /* BWWalkthroughViewController.swift */; };
 		E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A4491FE1441400717C3F /* GameViewController.swift */; };
 		E2B0A44D1FE1441400717C3F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E2B0A44A1FE1441400717C3F /* GameScene.sks */; };
 		E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A44B1FE1441400717C3F /* GameScene.swift */; };
 		E2B0A4501FE14D9800717C3F /* ChangeBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */; };
-		E2B0A4521FE1564800717C3F /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A4511FE1564700717C3F /* RoundUIView.swift */; };
 		E2C566171FDE9ECC00DFB7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */; };
 		E2C5661B1FDE9ECC00DFB7D0 /* BalansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C5661A1FDE9ECC00DFB7D0 /* BalansViewController.swift */; };
 		E2C5661E1FDE9ECC00DFB7D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C5661C1FDE9ECC00DFB7D0 /* Main.storyboard */; };
@@ -87,13 +87,13 @@
 		E22CEEC31FDEB20A00362640 /* LooppatroonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LooppatroonViewController.swift; path = Repress/LooppatroonViewController.swift; sourceTree = SOURCE_ROOT; };
 		E22CEEC51FDED0C300362640 /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
 		E2423CD92004D62A00ADA4DF /* ShadowUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowUIView.swift; sourceTree = "<group>"; };
+		E2423D01200630EE00ADA4DF /* RoundUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 		E2530CF52004B6A60095CF79 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		E2530CF62004B6A60095CF79 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 		E2B0A4491FE1441400717C3F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E2B0A44A1FE1441400717C3F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E2B0A44B1FE1441400717C3F /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E2B0A44F1FE14D9800717C3F /* ChangeBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackgroundColor.swift; sourceTree = "<group>"; };
-		E2B0A4511FE1564700717C3F /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
 		E2C566131FDE9ECC00DFB7D0 /* Repress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C566161FDE9ECC00DFB7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C5661A1FDE9ECC00DFB7D0 /* BalansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalansViewController.swift; sourceTree = "<group>"; };
@@ -178,9 +178,9 @@
 		25EAD3771FDFFB080073031A /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				E2423D01200630EE00ADA4DF /* RoundUIView.swift */,
 				25EAD37A1FDFFBF80073031A /* Colors.swift */,
 				25EAD37C1FE00A380073031A /* ButtonStyles.swift */,
-				E2B0A4511FE1564700717C3F /* RoundUIView.swift */,
 				257B50B61FE92F4800CF3D7E /* TabbarStyle.swift */,
 				257B50C51FE9470100CF3D7E /* LabelStyles.swift */,
 				E2423CD92004D62A00ADA4DF /* ShadowUIView.swift */,
@@ -331,6 +331,7 @@
 			files = (
 				4758225D1FEBC7D400EAFB17 /* GameObject.swift in Sources */,
 				25EAD3671FDEBC7C0073031A /* LiftFoot.swift in Sources */,
+				E2423D02200630EE00ADA4DF /* RoundUIView.swift in Sources */,
 				25EAD37B1FDFFBF80073031A /* Colors.swift in Sources */,
 				E2530CF72004B6A70095CF79 /* BWWalkthroughPageViewController.swift in Sources */,
 				E2C5661B1FDE9ECC00DFB7D0 /* BalansViewController.swift in Sources */,
@@ -347,7 +348,6 @@
 				25B32C971FEA9F5C004D73B2 /* IntExtensions.swift in Sources */,
 				25A0EE5C1FE7FC130045E45E /* UIImage+SwiftyGif.swift in Sources */,
 				E2B0A44E1FE1441400717C3F /* GameScene.swift in Sources */,
-				E2B0A4521FE1564800717C3F /* RoundUIView.swift in Sources */,
 				2577CFCC1FDEA4C400DB0FDA /* ShoeDataNormalizer.swift in Sources */,
 				257B50AE1FE90E3300CF3D7E /* LaunchScreenViewController.swift in Sources */,
 				25A0EE5E1FE7FC3A0045E45E /* UIImageView+SwiftyGif.swift in Sources */,

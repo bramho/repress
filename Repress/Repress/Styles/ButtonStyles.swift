@@ -35,6 +35,11 @@ class ButtonStyles {
         roundButton.borderColor = UIColor.white
         roundButton.cornerRadius = 30
         
+        let closeButton = CloseButton.appearance()
+        closeButton.setTitleColor(UIColor.white, for: .normal)
+        closeButton.backgroundColor = repressOrange
+        closeButton.cornerRadius = 15
+        
 //        roundButton.setTitleColor(repressBlue, for: .disabled)
 //        roundButton.setBackgroundImage(imageFromColor(UIColor.gray), for: .disabled)
     }
@@ -45,6 +50,8 @@ class OrangeButton: UIButton {}
 class WhiteButton: UIButton {}
 
 class RoundButton: UIButton{}
+
+class CloseButton: UIButton{}
 
 // WARNING: Breaks corner radius, no fix yet
 // Needs to be used to set background color for buttons with states
@@ -65,7 +72,7 @@ extension UIButton {
         set { layer.cornerRadius = newValue }
     }
     
-    @objc dynamic var borderColor: UIColor? {
+    @objc dynamic override var borderColor: UIColor? {
         get {
             if let cgColor = layer.borderColor {
                 return UIColor(cgColor: cgColor)
@@ -75,7 +82,7 @@ extension UIButton {
         set { layer.borderColor = newValue?.cgColor }
     }
     
-    @objc dynamic var borderWidth: CGFloat {
+    @objc dynamic override var borderWidth: CGFloat {
         get { return layer.borderWidth }
         set { layer.borderWidth = newValue }
     }

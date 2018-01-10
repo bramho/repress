@@ -46,6 +46,11 @@ class GewichtViewController: UIViewController, BWWalkthroughViewControllerDelega
         //walkthrough.add(viewController:page_one)
         //walkthrough.add(viewController:page_two)
         //walkthrough.add(viewController:page_three)
+        
+        self.present(walkthrough, animated: true, completion: nil)
+    }
+    func walkthroughCloseButtonPressed() {
+        self.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
