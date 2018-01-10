@@ -23,7 +23,7 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="GewichtViewController" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Links zool 1x" translatesAutoresizingMaskIntoConstraints="NO" id="frc-hf-EC6">
@@ -56,14 +56,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="85,5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMq-de-GkF" customClass="LargeBlueLabel" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="208" y="605" width="193" height="62"/>
+                                <rect key="frame" x="208" y="556" width="193" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="KG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGY-aY-eiN" customClass="OrangeLabel" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="407" y="605" width="39" height="62"/>
+                                <rect key="frame" x="407" y="556" width="39" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -84,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FA-sn-4C0" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="170" y="849" width="200" height="50"/>
+                                <rect key="frame" x="170" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Meten"/>
                                 <userDefinedRuntimeAttributes>
@@ -94,7 +94,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1d-zr-5dl" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="400" y="849" width="200" height="50"/>
+                                <rect key="frame" x="400" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Demo"/>
                                 <connections>
@@ -135,7 +135,7 @@
             <objects>
                 <viewController id="Ucq-gL-47q" userLabel="Balansspel" customClass="GameViewController" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2aK-1W-J2R" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-RE-Odw">
@@ -151,7 +151,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VM9-BY-wOl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Game" image="20pxgame-08.png" landscapeImage="20pxgame-08.png" largeContentSizeImage="20pxgame-08.png" selectedImage="20pxgame-08.png" id="EXw-F2-fh0"/>
+                    <tabBarItem key="tabBarItem" title="Game" image="20pxgame-08.png" landscapeImage="20pxgame-08.png" largeContentSizeImage="20pxgame-08.png" selectedImage="20pxgame-08.png" id="EXw-F2-fh0" customClass="TabbarItem" customModule="Repress" customModuleProvider="target"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ZE-C4-Xne" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,16 +162,16 @@
             <objects>
                 <viewController id="Kzo-D5-4PS" customClass="BalansViewController" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zL3-6h-jbF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uMB-NN-A0u">
-                                <rect key="frame" x="85" y="749" width="100" height="0.0"/>
+                                <rect key="frame" x="85" y="700" width="100" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.24705882352941178" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gMf-Dt-XeB">
-                                <rect key="frame" x="548" y="749" width="100" height="0.0"/>
+                                <rect key="frame" x="548" y="700" width="100" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.16862745098039217" green="0.24705882352941178" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -183,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8j-73-7pr" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="170" y="849" width="200" height="50"/>
+                                <rect key="frame" x="170" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start meten"/>
                                 <userDefinedRuntimeAttributes>
@@ -196,7 +196,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-d0-s6g" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="400" y="849" width="200" height="50"/>
+                                <rect key="frame" x="400" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start demo"/>
                                 <connections>
@@ -242,7 +242,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vAK-dS-wS9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Balans" image="20pxBalans.png" landscapeImage="20pxBalans.png" largeContentSizeImage="20pxBalans.png" selectedImage="20pxBalans.png" id="a57-tF-vbT">
+                    <tabBarItem key="tabBarItem" title="Balans" image="20pxBalans.png" landscapeImage="20pxBalans.png" largeContentSizeImage="20pxBalans.png" selectedImage="20pxBalans.png" id="a57-tF-vbT" customClass="TabbarItem" customModule="Repress" customModuleProvider="target">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
@@ -476,7 +476,7 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
             <objects>
                 <viewController id="Avf-ag-YEA" customClass="LooppatroonViewController" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rB5-u1-61Y">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shoe_Left" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-zs-Md9">
@@ -488,7 +488,7 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlE-9X-tOg" customClass="OrangeButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="170" y="849" width="200" height="50"/>
+                                <rect key="frame" x="170" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start meten"/>
                                 <userDefinedRuntimeAttributes>
@@ -501,7 +501,7 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwX-UZ-KWF" customClass="WhiteButton" customModule="Repress" customModuleProvider="target">
-                                <rect key="frame" x="400" y="849" width="200" height="50"/>
+                                <rect key="frame" x="400" y="800" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Start demo"/>
                                 <connections>
@@ -607,13 +607,8 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <viewLayoutGuide key="safeArea" id="d4Z-TE-P0r"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Looppatroon" image="20pxLooppatroonIcon.png" landscapeImage="20pxLooppatroonIcon.png" largeContentSizeImage="20pxLooppatroonIcon.png" selectedImage="20pxLooppatroonIcon.png" id="NBx-MS-OgY">
+                    <tabBarItem key="tabBarItem" title="Looppatroon" image="20pxLooppatroonIcon.png" landscapeImage="20pxLooppatroonIcon.png" largeContentSizeImage="20pxLooppatroonIcon.png" selectedImage="20pxLooppatroonIcon.png" id="NBx-MS-OgY" customClass="TabbarItem" customModule="Repress" customModuleProvider="target">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </tabBarItem>
                     <connections>
                         <outlet property="demoButton" destination="KwX-UZ-KWF" id="GOU-md-KhD"/>
@@ -1084,15 +1079,14 @@ Laat uw cliënt de in de tussentijd schoenen aantrekken.
             </objects>
             <point key="canvasLocation" x="-1327.34375" y="-18.1640625"/>
         </scene>
-        <!--Orange Tabbar-->
+        <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="OrangeTabbar" customModule="Repress" customModuleProvider="target">
+                <tabBarController storyboardIdentifier="tabbarView" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="1" green="0.3803921569" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

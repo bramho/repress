@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RoundUIView{
+class UIViewStyles{
     static func applyUIViewStyles() {
         print("test")
         let orangeRoundUIView = OrangeRoundUIView.appearance()
