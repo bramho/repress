@@ -835,7 +835,7 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
                                 <color key="textColor" red="0.16862745100000001" green="0.2470588235" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Voetjes" translatesAutoresizingMaskIntoConstraints="NO" id="agr-Ab-EnX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repress-Lopen-animatie.gif" translatesAutoresizingMaskIntoConstraints="NO" id="agr-Ab-EnX">
                                 <rect key="frame" x="120" y="334" width="145" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -939,7 +939,7 @@ Laat uw cliënt in de tussentijd de  schoenen aantrekken.</string>
                                 <color key="textColor" red="0.16862745100000001" green="0.2470588235" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Voetjes" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-LC-Vhw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Repress-Lopen-animatie.gif" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-LC-Vhw">
                                 <rect key="frame" x="120" y="334" width="145" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1112,8 +1112,8 @@ Laat uw cliënt de in de tussentijd schoenen aantrekken.
         <image name="Laden-ovaal" width="154" height="157"/>
         <image name="Links zool 1x" width="127" height="319"/>
         <image name="Rechts zool 1x" width="127" height="319"/>
+        <image name="Repress-Lopen-animatie.gif" width="1000" height="1000"/>
         <image name="Shoe_Left" width="510" height="1273"/>
         <image name="Shoe_Right" width="510" height="1271"/>
-        <image name="Voetjes" width="145" height="123"/>
     </resources>
 </document>

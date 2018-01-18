@@ -40,6 +40,7 @@
 		E22CEEC61FDED0C300362640 /* PatternFaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22CEEC51FDED0C300362640 /* PatternFaker.swift */; };
 		E2423CDA2004D62A00ADA4DF /* ShadowUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2423CD92004D62A00ADA4DF /* ShadowUIView.swift */; };
 		E2423D02200630EE00ADA4DF /* UIViewStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2423D01200630EE00ADA4DF /* UIViewStyles.swift */; };
+		E24421D1200CAE4E000A38A8 /* Repress-Lopen-animatie.gif in Resources */ = {isa = PBXBuildFile; fileRef = E24421D0200CAE4D000A38A8 /* Repress-Lopen-animatie.gif */; };
 		E2530CF72004B6A70095CF79 /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2530CF52004B6A60095CF79 /* BWWalkthroughPageViewController.swift */; };
 		E2530CF82004B6A70095CF79 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2530CF62004B6A60095CF79 /* BWWalkthroughViewController.swift */; };
 		E2B0A44C1FE1441400717C3F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B0A4491FE1441400717C3F /* GameViewController.swift */; };
@@ -88,6 +89,7 @@
 		E22CEEC51FDED0C300362640 /* PatternFaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFaker.swift; sourceTree = "<group>"; };
 		E2423CD92004D62A00ADA4DF /* ShadowUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowUIView.swift; sourceTree = "<group>"; };
 		E2423D01200630EE00ADA4DF /* UIViewStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewStyles.swift; sourceTree = "<group>"; };
+		E24421D0200CAE4D000A38A8 /* Repress-Lopen-animatie.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Repress-Lopen-animatie.gif"; sourceTree = "<group>"; };
 		E2530CF52004B6A60095CF79 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		E2530CF62004B6A60095CF79 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWalkthroughViewController.swift; sourceTree = "<group>"; };
 		E2B0A4491FE1441400717C3F /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		25A0EE551FE7FBAD0045E45E /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
+				E24421D0200CAE4D000A38A8 /* Repress-Lopen-animatie.gif */,
 				257B50B21FE9292100CF3D7E /* Screenframe.png */,
 				257B50B01FE9286100CF3D7E /* Loading-animatie-formaat.gif */,
 				25A0EE5F1FE7FEF10045E45E /* Logo-GIF.gif */,
@@ -312,6 +315,7 @@
 				259133F51FED197C00253930 /* 20pxgame-08.png in Resources */,
 				E2C566231FDE9ECC00DFB7D0 /* LaunchScreen.storyboard in Resources */,
 				25A0EE571FE7FBBA0045E45E /* Loading-animatie.gif in Resources */,
+				E24421D1200CAE4E000A38A8 /* Repress-Lopen-animatie.gif in Resources */,
 				E2C566201FDE9ECC00DFB7D0 /* Assets.xcassets in Resources */,
 				257B50C21FE93FA800CF3D7E /* 20pxBalans.png in Resources */,
 				257B50B11FE9286100CF3D7E /* Loading-animatie-formaat.gif in Resources */,

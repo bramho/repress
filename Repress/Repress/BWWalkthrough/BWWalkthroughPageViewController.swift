@@ -166,4 +166,6 @@ open class BWWalkthroughPageViewController: UIViewController, BWWalkthroughPage 
             view.subviews[index].layer.transform = transform
         }
     }
+    
 }
+
